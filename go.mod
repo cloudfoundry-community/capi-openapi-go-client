@@ -1,8 +1,6 @@
-module github.com/cloudfoundry-community/capi-openapi-go-client
+module github.com/cloudfoundry-community/capi-openapi-go-client/capiclient
 
 go 1.18
-
-replace github.com/cloudfoundry-community/capi-openapi-go-client/capiclient => ./
 
 require (
 	github.com/cloudfoundry-community/capi-openapi-go-client/capiclient v0.0.0-00010101000000-000000000000
