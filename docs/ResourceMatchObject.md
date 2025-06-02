@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Checksum** | Pointer to [**V3PackagesGuidUploadPostRequestResourcesInnerChecksum**](V3PackagesGuidUploadPostRequestResourcesInnerChecksum.md) |  | [optional] 
+**Checksum** | Pointer to [**ResourceMatchObjectChecksum**](ResourceMatchObjectChecksum.md) |  | [optional] 
 **Mode** | Pointer to **string** |  | [optional] 
 **Path** | Pointer to **string** |  | [optional] 
 **SizeInBytes** | Pointer to **int32** |  | [optional] 
@@ -30,20 +30,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetChecksum
 
-`func (o *ResourceMatchObject) GetChecksum() V3PackagesGuidUploadPostRequestResourcesInnerChecksum`
+`func (o *ResourceMatchObject) GetChecksum() ResourceMatchObjectChecksum`
 
 GetChecksum returns the Checksum field if non-nil, zero value otherwise.
 
 ### GetChecksumOk
 
-`func (o *ResourceMatchObject) GetChecksumOk() (*V3PackagesGuidUploadPostRequestResourcesInnerChecksum, bool)`
+`func (o *ResourceMatchObject) GetChecksumOk() (*ResourceMatchObjectChecksum, bool)`
 
 GetChecksumOk returns a tuple with the Checksum field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetChecksum
 
-`func (o *ResourceMatchObject) SetChecksum(v V3PackagesGuidUploadPostRequestResourcesInnerChecksum)`
+`func (o *ResourceMatchObject) SetChecksum(v ResourceMatchObjectChecksum)`
 
 SetChecksum sets Checksum field to given value.
 

@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Guid** | Pointer to **string** |  | [optional] 
+**Guid** | **string** |  | 
 
 ## Methods
 
 ### NewV3AppsPostRequestRelationshipsSpaceData
 
-`func NewV3AppsPostRequestRelationshipsSpaceData() *V3AppsPostRequestRelationshipsSpaceData`
+`func NewV3AppsPostRequestRelationshipsSpaceData(guid string, ) *V3AppsPostRequestRelationshipsSpaceData`
 
 NewV3AppsPostRequestRelationshipsSpaceData instantiates a new V3AppsPostRequestRelationshipsSpaceData object
 This constructor will assign default values to properties that have it defined,
@@ -44,11 +44,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *V3AppsPostRequestRelationshipsSpaceData) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

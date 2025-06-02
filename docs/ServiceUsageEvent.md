@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **CreatedAt** | Pointer to **time.Time** |  | [optional] 
 **Guid** | Pointer to **string** |  | [optional] 
 **Links** | Pointer to [**ServiceUsageEventLinks**](ServiceUsageEventLinks.md) |  | [optional] 
-**Organization** | Pointer to [**NullableRoleRelationshipsSpaceData**](RoleRelationshipsSpaceData.md) |  | [optional] 
+**Organization** | Pointer to [**NullableServiceUsageEventOrganization**](ServiceUsageEventOrganization.md) |  | [optional] 
 **ServiceBroker** | Pointer to [**NullableServiceUsageEventServiceBroker**](ServiceUsageEventServiceBroker.md) |  | [optional] 
 **ServiceInstance** | Pointer to [**NullableServiceUsageEventServiceInstance**](ServiceUsageEventServiceInstance.md) |  | [optional] 
 **ServiceOffering** | Pointer to [**NullableServiceUsageEventServiceBroker**](ServiceUsageEventServiceBroker.md) |  | [optional] 
@@ -112,20 +112,20 @@ HasLinks returns a boolean if a field has been set.
 
 ### GetOrganization
 
-`func (o *ServiceUsageEvent) GetOrganization() RoleRelationshipsSpaceData`
+`func (o *ServiceUsageEvent) GetOrganization() ServiceUsageEventOrganization`
 
 GetOrganization returns the Organization field if non-nil, zero value otherwise.
 
 ### GetOrganizationOk
 
-`func (o *ServiceUsageEvent) GetOrganizationOk() (*RoleRelationshipsSpaceData, bool)`
+`func (o *ServiceUsageEvent) GetOrganizationOk() (*ServiceUsageEventOrganization, bool)`
 
 GetOrganizationOk returns a tuple with the Organization field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOrganization
 
-`func (o *ServiceUsageEvent) SetOrganization(v RoleRelationshipsSpaceData)`
+`func (o *ServiceUsageEvent) SetOrganization(v ServiceUsageEventOrganization)`
 
 SetOrganization sets Organization field to given value.
 

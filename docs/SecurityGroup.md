@@ -4,20 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**GloballyEnabled** | Pointer to [**SecurityGroupGloballyEnabled**](SecurityGroupGloballyEnabled.md) |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**Links** | Pointer to [**SecurityGroupLinks**](SecurityGroupLinks.md) |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Relationships** | Pointer to [**SecurityGroupRelationships**](SecurityGroupRelationships.md) |  | [optional] 
-**Rules** | Pointer to [**[]Rule**](Rule.md) |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
+**CreatedAt** | **time.Time** | Timestamp when the security group was created | 
+**GloballyEnabled** | [**SecurityGroupGloballyEnabled**](SecurityGroupGloballyEnabled.md) |  | 
+**Guid** | **string** | Unique identifier for the security group | 
+**Links** | [**SecurityGroupLinks**](SecurityGroupLinks.md) |  | 
+**Metadata** | Pointer to [**SecurityGroupMetadata**](SecurityGroupMetadata.md) |  | [optional] 
+**Name** | **string** | Human-readable name for the security group | 
+**Relationships** | [**SecurityGroupRelationships**](SecurityGroupRelationships.md) |  | 
+**Rules** | [**[]Rule**](Rule.md) | Array of egress traffic rules | 
+**UpdatedAt** | **time.Time** | Timestamp when the security group was last updated | 
 
 ## Methods
 
 ### NewSecurityGroup
 
-`func NewSecurityGroup() *SecurityGroup`
+`func NewSecurityGroup(createdAt time.Time, globallyEnabled SecurityGroupGloballyEnabled, guid string, links SecurityGroupLinks, name string, relationships SecurityGroupRelationships, rules []Rule, updatedAt time.Time, ) *SecurityGroup`
 
 NewSecurityGroup instantiates a new SecurityGroup object
 This constructor will assign default values to properties that have it defined,
@@ -51,11 +52,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *SecurityGroup) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetGloballyEnabled
 
@@ -76,11 +72,6 @@ and a boolean to check if the value has been set.
 
 SetGloballyEnabled sets GloballyEnabled field to given value.
 
-### HasGloballyEnabled
-
-`func (o *SecurityGroup) HasGloballyEnabled() bool`
-
-HasGloballyEnabled returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -101,11 +92,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *SecurityGroup) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetLinks
 
@@ -126,11 +112,31 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
 
-`func (o *SecurityGroup) HasLinks() bool`
+### GetMetadata
 
-HasLinks returns a boolean if a field has been set.
+`func (o *SecurityGroup) GetMetadata() SecurityGroupMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *SecurityGroup) GetMetadataOk() (*SecurityGroupMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *SecurityGroup) SetMetadata(v SecurityGroupMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *SecurityGroup) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -151,11 +157,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *SecurityGroup) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 ### GetRelationships
 
@@ -176,11 +177,6 @@ and a boolean to check if the value has been set.
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *SecurityGroup) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetRules
 
@@ -201,11 +197,6 @@ and a boolean to check if the value has been set.
 
 SetRules sets Rules field to given value.
 
-### HasRules
-
-`func (o *SecurityGroup) HasRules() bool`
-
-HasRules returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -226,11 +217,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *SecurityGroup) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

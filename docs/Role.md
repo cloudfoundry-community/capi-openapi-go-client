@@ -4,18 +4,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**Links** | Pointer to [**RoleLinks**](RoleLinks.md) |  | [optional] 
-**Relationships** | Pointer to [**RoleRelationships**](RoleRelationships.md) |  | [optional] 
-**Type** | Pointer to **string** |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
+**CreatedAt** | **time.Time** | Timestamp when the role was created | 
+**Guid** | **string** | Unique identifier for the role | 
+**Links** | [**RoleLinks**](RoleLinks.md) |  | 
+**Metadata** | Pointer to [**RoleMetadata**](RoleMetadata.md) |  | [optional] 
+**Relationships** | [**RoleRelationships**](RoleRelationships.md) |  | 
+**Type** | **string** | The type of role | 
+**UpdatedAt** | **time.Time** | Timestamp when the role was last updated | 
 
 ## Methods
 
 ### NewRole
 
-`func NewRole() *Role`
+`func NewRole(createdAt time.Time, guid string, links RoleLinks, relationships RoleRelationships, type_ string, updatedAt time.Time, ) *Role`
 
 NewRole instantiates a new Role object
 This constructor will assign default values to properties that have it defined,
@@ -49,11 +50,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *Role) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -74,11 +70,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *Role) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetLinks
 
@@ -99,11 +90,31 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
 
-`func (o *Role) HasLinks() bool`
+### GetMetadata
 
-HasLinks returns a boolean if a field has been set.
+`func (o *Role) GetMetadata() RoleMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *Role) GetMetadataOk() (*RoleMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *Role) SetMetadata(v RoleMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *Role) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetRelationships
 
@@ -124,11 +135,6 @@ and a boolean to check if the value has been set.
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *Role) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetType
 
@@ -149,11 +155,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-### HasType
-
-`func (o *Role) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -174,11 +175,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *Role) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

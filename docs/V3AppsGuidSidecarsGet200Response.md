@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Pagination** | Pointer to [**Pagination**](Pagination.md) |  | [optional] 
-**Resources** | Pointer to [**[]Sidecar**](Sidecar.md) |  | [optional] 
+**Pagination** | [**Pagination**](Pagination.md) |  | 
+**Resources** | [**[]Sidecar**](Sidecar.md) |  | 
 
 ## Methods
 
 ### NewV3AppsGuidSidecarsGet200Response
 
-`func NewV3AppsGuidSidecarsGet200Response() *V3AppsGuidSidecarsGet200Response`
+`func NewV3AppsGuidSidecarsGet200Response(pagination Pagination, resources []Sidecar, ) *V3AppsGuidSidecarsGet200Response`
 
 NewV3AppsGuidSidecarsGet200Response instantiates a new V3AppsGuidSidecarsGet200Response object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetPagination sets Pagination field to given value.
 
-### HasPagination
-
-`func (o *V3AppsGuidSidecarsGet200Response) HasPagination() bool`
-
-HasPagination returns a boolean if a field has been set.
 
 ### GetResources
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetResources sets Resources field to given value.
 
-### HasResources
-
-`func (o *V3AppsGuidSidecarsGet200Response) HasResources() bool`
-
-HasResources returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

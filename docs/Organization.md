@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **CreatedAt** | Pointer to **time.Time** |  | [optional] 
 **Guid** | Pointer to **string** |  | [optional] 
 **Links** | Pointer to [**OrganizationLinks**](OrganizationLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Relationships** | Pointer to [**OrganizationRelationships**](OrganizationRelationships.md) |  | [optional] 
 **Suspended** | Pointer to **bool** |  | [optional] 
@@ -109,20 +109,20 @@ HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *Organization) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *Organization) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *Organization) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *Organization) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *Organization) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *Organization) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

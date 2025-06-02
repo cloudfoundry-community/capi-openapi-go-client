@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ServiceOffering** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
+**ServiceOffering** | Pointer to [**AssignDefaultIsolationSegmentRequest**](AssignDefaultIsolationSegmentRequest.md) |  | [optional] 
 
 ## Methods
 
@@ -27,20 +27,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetServiceOffering
 
-`func (o *ServicePlanRelationships) GetServiceOffering() V3AppsPostRequestRelationshipsSpace`
+`func (o *ServicePlanRelationships) GetServiceOffering() AssignDefaultIsolationSegmentRequest`
 
 GetServiceOffering returns the ServiceOffering field if non-nil, zero value otherwise.
 
 ### GetServiceOfferingOk
 
-`func (o *ServicePlanRelationships) GetServiceOfferingOk() (*V3AppsPostRequestRelationshipsSpace, bool)`
+`func (o *ServicePlanRelationships) GetServiceOfferingOk() (*AssignDefaultIsolationSegmentRequest, bool)`
 
 GetServiceOfferingOk returns a tuple with the ServiceOffering field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetServiceOffering
 
-`func (o *ServicePlanRelationships) SetServiceOffering(v V3AppsPostRequestRelationshipsSpace)`
+`func (o *ServicePlanRelationships) SetServiceOffering(v AssignDefaultIsolationSegmentRequest)`
 
 SetServiceOffering sets ServiceOffering field to given value.
 

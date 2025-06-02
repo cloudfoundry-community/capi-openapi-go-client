@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**NullableRoleRelationshipsSpaceData**](RoleRelationshipsSpaceData.md) |  | [optional] 
+**Data** | [**NullableRoleRelationshipsSpaceData**](RoleRelationshipsSpaceData.md) |  | 
 
 ## Methods
 
 ### NewRoleRelationshipsSpace
 
-`func NewRoleRelationshipsSpace() *RoleRelationshipsSpace`
+`func NewRoleRelationshipsSpace(data NullableRoleRelationshipsSpaceData, ) *RoleRelationshipsSpace`
 
 NewRoleRelationshipsSpace instantiates a new RoleRelationshipsSpace object
 This constructor will assign default values to properties that have it defined,
@@ -44,11 +44,6 @@ and a boolean to check if the value has been set.
 
 SetData sets Data field to given value.
 
-### HasData
-
-`func (o *RoleRelationshipsSpace) HasData() bool`
-
-HasData returns a boolean if a field has been set.
 
 ### SetDataNil
 

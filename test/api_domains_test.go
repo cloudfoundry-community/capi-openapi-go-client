@@ -1,5 +1,5 @@
 /*
-Cloud Controller API
+Cloud Foundry API
 
 Testing DomainsAPIService
 
@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func Test_capiclient_DomainsAPIService(t *testing.T) {

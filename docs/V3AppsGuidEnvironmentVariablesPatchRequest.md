@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Var** | Pointer to **map[string]string** |  | [optional] 
+**Var** | Pointer to **map[string]string** | Environment variables to set | [optional] 
 
 ## Methods
 

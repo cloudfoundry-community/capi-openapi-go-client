@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Links** | Pointer to [**map[string]Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
-**Var** | Pointer to **map[string]string** |  | [optional] 
+**Links** | Pointer to [**V3AppsGuidEnvironmentVariablesGet200ResponseLinks**](V3AppsGuidEnvironmentVariablesGet200ResponseLinks.md) |  | [optional] 
+**Var** | Pointer to **map[string]string** | User-provided environment variables | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetLinks
 
-`func (o *V3AppsGuidEnvironmentVariablesGet200Response) GetLinks() map[string]Get200ResponseLinksLogCache`
+`func (o *V3AppsGuidEnvironmentVariablesGet200Response) GetLinks() V3AppsGuidEnvironmentVariablesGet200ResponseLinks`
 
 GetLinks returns the Links field if non-nil, zero value otherwise.
 
 ### GetLinksOk
 
-`func (o *V3AppsGuidEnvironmentVariablesGet200Response) GetLinksOk() (*map[string]Get200ResponseLinksLogCache, bool)`
+`func (o *V3AppsGuidEnvironmentVariablesGet200Response) GetLinksOk() (*V3AppsGuidEnvironmentVariablesGet200ResponseLinks, bool)`
 
 GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLinks
 
-`func (o *V3AppsGuidEnvironmentVariablesGet200Response) SetLinks(v map[string]Get200ResponseLinksLogCache)`
+`func (o *V3AppsGuidEnvironmentVariablesGet200Response) SetLinks(v V3AppsGuidEnvironmentVariablesGet200ResponseLinks)`
 
 SetLinks sets Links field to given value.
 

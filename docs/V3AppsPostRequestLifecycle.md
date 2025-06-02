@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Data** | Pointer to [**V3AppsPostRequestLifecycleData**](V3AppsPostRequestLifecycleData.md) |  | [optional] 
-**Type** | Pointer to **string** | Type of lifecycle. | [optional] 
+**Type** | Pointer to **string** | Type of app lifecycle | [optional] 
 
 ## Methods
 

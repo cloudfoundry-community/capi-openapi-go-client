@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Image** | Pointer to **string** | Required when type is docker; the registry address of the image | [optional] 
-**Password** | Pointer to **string** | Optional when type is docker and accessing a secured registry | [optional] 
-**Username** | Pointer to **string** | Optional when type is docker and accessing a secured registry | [optional] 
+**Image** | Pointer to **string** | Docker image URL or OCI image reference (docker/cnb types) | [optional] 
+**Password** | Pointer to **string** | Password for private registry authentication | [optional] 
+**Username** | Pointer to **string** | Username for private registry authentication | [optional] 
 
 ## Methods
 

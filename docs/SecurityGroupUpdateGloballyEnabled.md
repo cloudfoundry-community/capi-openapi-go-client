@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Running** | Pointer to **NullableBool** |  | [optional] 
-**Staging** | Pointer to **NullableBool** |  | [optional] 
+**Running** | Pointer to **bool** | Apply globally to all running apps | [optional] 
+**Staging** | Pointer to **bool** | Apply globally during app staging | [optional] 
 
 ## Methods
 
@@ -51,16 +51,6 @@ SetRunning sets Running field to given value.
 
 HasRunning returns a boolean if a field has been set.
 
-### SetRunningNil
-
-`func (o *SecurityGroupUpdateGloballyEnabled) SetRunningNil(b bool)`
-
- SetRunningNil sets the value for Running to be an explicit nil
-
-### UnsetRunning
-`func (o *SecurityGroupUpdateGloballyEnabled) UnsetRunning()`
-
-UnsetRunning ensures that no value is present for Running, not even an explicit nil
 ### GetStaging
 
 `func (o *SecurityGroupUpdateGloballyEnabled) GetStaging() bool`
@@ -86,16 +76,6 @@ SetStaging sets Staging field to given value.
 
 HasStaging returns a boolean if a field has been set.
 
-### SetStagingNil
-
-`func (o *SecurityGroupUpdateGloballyEnabled) SetStagingNil(b bool)`
-
- SetStagingNil sets the value for Staging to be an explicit nil
-
-### UnsetStaging
-`func (o *SecurityGroupUpdateGloballyEnabled) UnsetStaging()`
-
-UnsetStaging ensures that no value is present for Staging, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

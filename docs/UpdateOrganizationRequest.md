@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Suspended** | Pointer to **bool** |  | [optional] 
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetMetadata
 
-`func (o *UpdateOrganizationRequest) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *UpdateOrganizationRequest) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *UpdateOrganizationRequest) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *UpdateOrganizationRequest) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *UpdateOrganizationRequest) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *UpdateOrganizationRequest) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

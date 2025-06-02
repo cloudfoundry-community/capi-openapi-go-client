@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | [optional] 
+**Data** | [**V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | 
 
 ## Methods
 
 ### NewV3AppsPostRequestRelationshipsSpace
 
-`func NewV3AppsPostRequestRelationshipsSpace() *V3AppsPostRequestRelationshipsSpace`
+`func NewV3AppsPostRequestRelationshipsSpace(data V3AppsPostRequestRelationshipsSpaceData, ) *V3AppsPostRequestRelationshipsSpace`
 
 NewV3AppsPostRequestRelationshipsSpace instantiates a new V3AppsPostRequestRelationshipsSpace object
 This constructor will assign default values to properties that have it defined,
@@ -44,11 +44,6 @@ and a boolean to check if the value has been set.
 
 SetData sets Data field to given value.
 
-### HasData
-
-`func (o *V3AppsPostRequestRelationshipsSpace) HasData() bool`
-
-HasData returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

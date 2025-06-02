@@ -4,17 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CustomErrorMessage** | Pointer to **string** |  | [optional] 
-**Enabled** | Pointer to **bool** |  | [optional] 
-**Links** | Pointer to [**V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks**](V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks.md) |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
+**CustomErrorMessage** | Pointer to **NullableString** | Custom error message shown when the feature is disabled | [optional] 
+**Enabled** | **bool** | Whether the feature is enabled | 
+**Links** | [**FeatureFlagLinks**](FeatureFlagLinks.md) |  | 
+**Metadata** | Pointer to [**FeatureFlagMetadata**](FeatureFlagMetadata.md) |  | [optional] 
+**Name** | **string** | Unique name of the feature flag | 
+**UpdatedAt** | **time.Time** | Timestamp when the feature flag was last updated | 
 
 ## Methods
 
 ### NewFeatureFlag
 
-`func NewFeatureFlag() *FeatureFlag`
+`func NewFeatureFlag(enabled bool, links FeatureFlagLinks, name string, updatedAt time.Time, ) *FeatureFlag`
 
 NewFeatureFlag instantiates a new FeatureFlag object
 This constructor will assign default values to properties that have it defined,
@@ -54,6 +55,16 @@ SetCustomErrorMessage sets CustomErrorMessage field to given value.
 
 HasCustomErrorMessage returns a boolean if a field has been set.
 
+### SetCustomErrorMessageNil
+
+`func (o *FeatureFlag) SetCustomErrorMessageNil(b bool)`
+
+ SetCustomErrorMessageNil sets the value for CustomErrorMessage to be an explicit nil
+
+### UnsetCustomErrorMessage
+`func (o *FeatureFlag) UnsetCustomErrorMessage()`
+
+UnsetCustomErrorMessage ensures that no value is present for CustomErrorMessage, not even an explicit nil
 ### GetEnabled
 
 `func (o *FeatureFlag) GetEnabled() bool`
@@ -73,36 +84,51 @@ and a boolean to check if the value has been set.
 
 SetEnabled sets Enabled field to given value.
 
-### HasEnabled
-
-`func (o *FeatureFlag) HasEnabled() bool`
-
-HasEnabled returns a boolean if a field has been set.
 
 ### GetLinks
 
-`func (o *FeatureFlag) GetLinks() V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks`
+`func (o *FeatureFlag) GetLinks() FeatureFlagLinks`
 
 GetLinks returns the Links field if non-nil, zero value otherwise.
 
 ### GetLinksOk
 
-`func (o *FeatureFlag) GetLinksOk() (*V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks, bool)`
+`func (o *FeatureFlag) GetLinksOk() (*FeatureFlagLinks, bool)`
 
 GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLinks
 
-`func (o *FeatureFlag) SetLinks(v V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks)`
+`func (o *FeatureFlag) SetLinks(v FeatureFlagLinks)`
 
 SetLinks sets Links field to given value.
 
-### HasLinks
 
-`func (o *FeatureFlag) HasLinks() bool`
+### GetMetadata
 
-HasLinks returns a boolean if a field has been set.
+`func (o *FeatureFlag) GetMetadata() FeatureFlagMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *FeatureFlag) GetMetadataOk() (*FeatureFlagMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *FeatureFlag) SetMetadata(v FeatureFlagMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *FeatureFlag) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -123,11 +149,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *FeatureFlag) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -148,11 +169,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *FeatureFlag) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

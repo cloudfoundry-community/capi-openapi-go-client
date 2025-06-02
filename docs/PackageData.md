@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Checksum** | Pointer to [**PackageDataChecksum**](PackageDataChecksum.md) |  | [optional] 
-**Error** | Pointer to **NullableString** | If an error occurs this field will contain the error message | [optional] 
-**Image** | Pointer to **string** | The registry address of the image (for Docker packages) | [optional] 
-**Password** | Pointer to **string** | The password for the image&#39;s registry (for Docker packages) | [optional] 
-**Username** | Pointer to **string** | The username for the image&#39;s registry (for Docker packages) | [optional] 
+**Error** | Pointer to **NullableString** | Error message if package processing failed | [optional] 
+**Image** | Pointer to **string** | Image reference for docker/cnb packages | [optional] 
+**Password** | Pointer to **string** | Registry password (write-only) | [optional] 
+**Username** | Pointer to **string** | Registry username (write-only) | [optional] 
 
 ## Methods
 

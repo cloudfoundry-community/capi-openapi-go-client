@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Guid** | Pointer to **string** |  | [optional] 
 **Links** | Pointer to [**ServicePlanLinks**](ServicePlanLinks.md) |  | [optional] 
 **MaintenanceInfo** | Pointer to [**MaintenanceInfo**](MaintenanceInfo.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Relationships** | Pointer to [**ServicePlanRelationships**](ServicePlanRelationships.md) |  | [optional] 
 **Schemas** | Pointer to [**PlanSchemas**](PlanSchemas.md) |  | [optional] 
@@ -266,20 +266,20 @@ HasMaintenanceInfo returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *ServicePlan) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *ServicePlan) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ServicePlan) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *ServicePlan) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ServicePlan) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *ServicePlan) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

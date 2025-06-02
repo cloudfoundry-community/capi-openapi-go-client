@@ -4,15 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Organizations** | Pointer to [**[]OrganizationVisibility**](OrganizationVisibility.md) |  | [optional] 
+**Metadata** | Pointer to [**ServicePlanVisibilityMetadata**](ServicePlanVisibilityMetadata.md) |  | [optional] 
+**Organizations** | Pointer to [**[]OrganizationVisibility**](OrganizationVisibility.md) | List of organizations where the plan is visible (only for organization type) | [optional] 
 **Space** | Pointer to [**ServicePlanVisibilitySpace**](ServicePlanVisibilitySpace.md) |  | [optional] 
-**Type** | Pointer to **string** | Denotes the visibility of the plan; can be public, admin, organization, space | [optional] 
+**Type** | **string** | Denotes the visibility of the plan | 
 
 ## Methods
 
 ### NewServicePlanVisibility
 
-`func NewServicePlanVisibility() *ServicePlanVisibility`
+`func NewServicePlanVisibility(type_ string, ) *ServicePlanVisibility`
 
 NewServicePlanVisibility instantiates a new ServicePlanVisibility object
 This constructor will assign default values to properties that have it defined,
@@ -26,6 +27,31 @@ will change when the set of required properties is changed
 NewServicePlanVisibilityWithDefaults instantiates a new ServicePlanVisibility object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetMetadata
+
+`func (o *ServicePlanVisibility) GetMetadata() ServicePlanVisibilityMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *ServicePlanVisibility) GetMetadataOk() (*ServicePlanVisibilityMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *ServicePlanVisibility) SetMetadata(v ServicePlanVisibilityMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *ServicePlanVisibility) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetOrganizations
 
@@ -96,11 +122,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-### HasType
-
-`func (o *ServicePlanVisibility) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

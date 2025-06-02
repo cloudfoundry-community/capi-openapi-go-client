@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Resources** | Pointer to [**[]SpaceFeature**](SpaceFeature.md) |  | [optional] 
+**Resources** | [**[]SpaceFeature**](SpaceFeature.md) |  | 
 
 ## Methods
 
 ### NewV3SpacesGuidFeaturesGet200Response
 
-`func NewV3SpacesGuidFeaturesGet200Response() *V3SpacesGuidFeaturesGet200Response`
+`func NewV3SpacesGuidFeaturesGet200Response(resources []SpaceFeature, ) *V3SpacesGuidFeaturesGet200Response`
 
 NewV3SpacesGuidFeaturesGet200Response instantiates a new V3SpacesGuidFeaturesGet200Response object
 This constructor will assign default values to properties that have it defined,
@@ -44,11 +44,6 @@ and a boolean to check if the value has been set.
 
 SetResources sets Resources field to given value.
 
-### HasResources
-
-`func (o *V3SpacesGuidFeaturesGet200Response) HasResources() bool`
-
-HasResources returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

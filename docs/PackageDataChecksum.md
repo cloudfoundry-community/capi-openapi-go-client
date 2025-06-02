@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Type** | Pointer to **string** | The checksum type, for example: sha256 | [optional] 
-**Value** | Pointer to **NullableString** | The checksum value; this will be populated after bits are uploaded | [optional] 
+**Type** | Pointer to **string** |  | [optional] 
+**Value** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -76,16 +76,6 @@ SetValue sets Value field to given value.
 
 HasValue returns a boolean if a field has been set.
 
-### SetValueNil
-
-`func (o *PackageDataChecksum) SetValueNil(b bool)`
-
- SetValueNil sets the value for Value to be an explicit nil
-
-### UnsetValue
-`func (o *PackageDataChecksum) UnsetValue()`
-
-UnsetValue ensures that no value is present for Value, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

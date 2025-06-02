@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Self** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**Support** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
+**Self** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**Support** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetSelf
 
-`func (o *PlatformInfoLinks) GetSelf() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *PlatformInfoLinks) GetSelf() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetSelf returns the Self field if non-nil, zero value otherwise.
 
 ### GetSelfOk
 
-`func (o *PlatformInfoLinks) GetSelfOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *PlatformInfoLinks) GetSelfOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSelf
 
-`func (o *PlatformInfoLinks) SetSelf(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *PlatformInfoLinks) SetSelf(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetSelf sets Self field to given value.
 
@@ -53,20 +53,20 @@ HasSelf returns a boolean if a field has been set.
 
 ### GetSupport
 
-`func (o *PlatformInfoLinks) GetSupport() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *PlatformInfoLinks) GetSupport() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetSupport returns the Support field if non-nil, zero value otherwise.
 
 ### GetSupportOk
 
-`func (o *PlatformInfoLinks) GetSupportOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *PlatformInfoLinks) GetSupportOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetSupportOk returns a tuple with the Support field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSupport
 
-`func (o *PlatformInfoLinks) SetSupport(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *PlatformInfoLinks) SetSupport(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetSupport sets Support field to given value.
 

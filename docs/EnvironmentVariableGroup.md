@@ -4,16 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Links** | Pointer to [**V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks**](V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks.md) |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
-**Var** | Pointer to **map[string]string** |  | [optional] 
+**Links** | [**EnvironmentVariableGroupLinks**](EnvironmentVariableGroupLinks.md) |  | 
+**Metadata** | Pointer to [**EnvironmentVariableGroupMetadata**](EnvironmentVariableGroupMetadata.md) |  | [optional] 
+**Name** | **string** | Name of the environment variable group | 
+**UpdatedAt** | **time.Time** | Timestamp when the environment variable group was last updated | 
+**Var** | **map[string]string** | Environment variables as key-value pairs | 
 
 ## Methods
 
 ### NewEnvironmentVariableGroup
 
-`func NewEnvironmentVariableGroup() *EnvironmentVariableGroup`
+`func NewEnvironmentVariableGroup(links EnvironmentVariableGroupLinks, name string, updatedAt time.Time, var_ map[string]string, ) *EnvironmentVariableGroup`
 
 NewEnvironmentVariableGroup instantiates a new EnvironmentVariableGroup object
 This constructor will assign default values to properties that have it defined,
@@ -30,28 +31,48 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetLinks
 
-`func (o *EnvironmentVariableGroup) GetLinks() V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks`
+`func (o *EnvironmentVariableGroup) GetLinks() EnvironmentVariableGroupLinks`
 
 GetLinks returns the Links field if non-nil, zero value otherwise.
 
 ### GetLinksOk
 
-`func (o *EnvironmentVariableGroup) GetLinksOk() (*V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks, bool)`
+`func (o *EnvironmentVariableGroup) GetLinksOk() (*EnvironmentVariableGroupLinks, bool)`
 
 GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLinks
 
-`func (o *EnvironmentVariableGroup) SetLinks(v V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks)`
+`func (o *EnvironmentVariableGroup) SetLinks(v EnvironmentVariableGroupLinks)`
 
 SetLinks sets Links field to given value.
 
-### HasLinks
 
-`func (o *EnvironmentVariableGroup) HasLinks() bool`
+### GetMetadata
 
-HasLinks returns a boolean if a field has been set.
+`func (o *EnvironmentVariableGroup) GetMetadata() EnvironmentVariableGroupMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *EnvironmentVariableGroup) GetMetadataOk() (*EnvironmentVariableGroupMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *EnvironmentVariableGroup) SetMetadata(v EnvironmentVariableGroupMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *EnvironmentVariableGroup) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -72,11 +93,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *EnvironmentVariableGroup) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -97,11 +113,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *EnvironmentVariableGroup) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 ### GetVar
 
@@ -122,11 +133,6 @@ and a boolean to check if the value has been set.
 
 SetVar sets Var field to given value.
 
-### HasVar
-
-`func (o *EnvironmentVariableGroup) HasVar() bool`
-
-HasVar returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

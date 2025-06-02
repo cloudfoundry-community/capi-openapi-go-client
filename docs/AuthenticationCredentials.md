@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Password** | Pointer to **string** | The password to authenticate against the service broker. | [optional] 
-**Username** | Pointer to **string** | The username to authenticate against the service broker. | [optional] 
+**Password** | **string** |  | 
+**Username** | **string** |  | 
 
 ## Methods
 
 ### NewAuthenticationCredentials
 
-`func NewAuthenticationCredentials() *AuthenticationCredentials`
+`func NewAuthenticationCredentials(password string, username string, ) *AuthenticationCredentials`
 
 NewAuthenticationCredentials instantiates a new AuthenticationCredentials object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetPassword sets Password field to given value.
 
-### HasPassword
-
-`func (o *AuthenticationCredentials) HasPassword() bool`
-
-HasPassword returns a boolean if a field has been set.
 
 ### GetUsername
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetUsername sets Username field to given value.
 
-### HasUsername
-
-`func (o *AuthenticationCredentials) HasUsername() bool`
-
-HasUsername returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

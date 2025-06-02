@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Organization** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
-**Spaces** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest**](V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest.md) |  | [optional] 
+**Organization** | [**SpaceQuotaRelationshipsOrganization**](SpaceQuotaRelationshipsOrganization.md) |  | 
+**Spaces** | Pointer to [**SpaceQuotaRelationshipsSpaces**](SpaceQuotaRelationshipsSpaces.md) |  | [optional] 
 
 ## Methods
 
 ### NewSpaceQuotaRelationships
 
-`func NewSpaceQuotaRelationships() *SpaceQuotaRelationships`
+`func NewSpaceQuotaRelationships(organization SpaceQuotaRelationshipsOrganization, ) *SpaceQuotaRelationships`
 
 NewSpaceQuotaRelationships instantiates a new SpaceQuotaRelationships object
 This constructor will assign default values to properties that have it defined,
@@ -28,45 +28,40 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetOrganization
 
-`func (o *SpaceQuotaRelationships) GetOrganization() V3AppsPostRequestRelationshipsSpace`
+`func (o *SpaceQuotaRelationships) GetOrganization() SpaceQuotaRelationshipsOrganization`
 
 GetOrganization returns the Organization field if non-nil, zero value otherwise.
 
 ### GetOrganizationOk
 
-`func (o *SpaceQuotaRelationships) GetOrganizationOk() (*V3AppsPostRequestRelationshipsSpace, bool)`
+`func (o *SpaceQuotaRelationships) GetOrganizationOk() (*SpaceQuotaRelationshipsOrganization, bool)`
 
 GetOrganizationOk returns a tuple with the Organization field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOrganization
 
-`func (o *SpaceQuotaRelationships) SetOrganization(v V3AppsPostRequestRelationshipsSpace)`
+`func (o *SpaceQuotaRelationships) SetOrganization(v SpaceQuotaRelationshipsOrganization)`
 
 SetOrganization sets Organization field to given value.
 
-### HasOrganization
-
-`func (o *SpaceQuotaRelationships) HasOrganization() bool`
-
-HasOrganization returns a boolean if a field has been set.
 
 ### GetSpaces
 
-`func (o *SpaceQuotaRelationships) GetSpaces() V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest`
+`func (o *SpaceQuotaRelationships) GetSpaces() SpaceQuotaRelationshipsSpaces`
 
 GetSpaces returns the Spaces field if non-nil, zero value otherwise.
 
 ### GetSpacesOk
 
-`func (o *SpaceQuotaRelationships) GetSpacesOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest, bool)`
+`func (o *SpaceQuotaRelationships) GetSpacesOk() (*SpaceQuotaRelationshipsSpaces, bool)`
 
 GetSpacesOk returns a tuple with the Spaces field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSpaces
 
-`func (o *SpaceQuotaRelationships) SetSpaces(v V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest)`
+`func (o *SpaceQuotaRelationships) SetSpaces(v SpaceQuotaRelationshipsSpaces)`
 
 SetSpaces sets Spaces field to given value.
 

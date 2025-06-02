@@ -31,7 +31,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -113,7 +113,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[OrgManager](../README.md#OrgManager), [Admin](../README.md#Admin)
 
 ### HTTP request headers
 
@@ -181,7 +181,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -251,7 +251,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -294,7 +294,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[OrgManager](../README.md#OrgManager), [Admin](../README.md#Admin)
 
 ### HTTP request headers
 
@@ -323,7 +323,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[OrgManager](../README.md#OrgManager), [Admin](../README.md#Admin)
 
 ### HTTP request headers
 
@@ -394,7 +394,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -437,7 +437,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[OrgManager](../README.md#OrgManager), [Admin](../README.md#Admin)
 
 ### HTTP request headers
 
@@ -466,7 +466,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func main() {
@@ -503,7 +503,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[OrgManager](../README.md#OrgManager)
 
 ### HTTP request headers
 

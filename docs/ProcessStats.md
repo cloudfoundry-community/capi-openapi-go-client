@@ -4,26 +4,26 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Details** | Pointer to **NullableString** |  | [optional] 
-**DiskQuota** | Pointer to **NullableInt32** |  | [optional] 
-**FdsQuota** | Pointer to **int32** |  | [optional] 
-**Host** | Pointer to **string** |  | [optional] 
-**Index** | Pointer to **int32** |  | [optional] 
-**InstanceInternalIp** | Pointer to **string** |  | [optional] 
-**InstancePorts** | Pointer to [**[]ProcessStatsInstancePortsInner**](ProcessStatsInstancePortsInner.md) |  | [optional] 
-**IsolationSegment** | Pointer to **NullableString** |  | [optional] 
-**LogRateLimit** | Pointer to **NullableInt32** |  | [optional] 
-**MemQuota** | Pointer to **NullableInt32** |  | [optional] 
-**State** | Pointer to **string** |  | [optional] 
-**Type** | Pointer to **string** |  | [optional] 
-**Uptime** | Pointer to **int32** |  | [optional] 
-**Usage** | Pointer to [**ProcessStatsUsage**](ProcessStatsUsage.md) |  | [optional] 
+**Details** | **NullableString** | Additional details about instance state | 
+**DiskQuota** | **int32** | Disk quota in bytes | 
+**FdsQuota** | **int32** | File descriptor quota | 
+**Host** | **string** | Host running the instance | 
+**Index** | **int32** | Instance index | 
+**InstanceInternalIp** | Pointer to **string** | Internal IP of the instance | [optional] 
+**InstancePorts** | [**[]ProcessStatsInstancePortsInner**](ProcessStatsInstancePortsInner.md) |  | 
+**IsolationSegment** | **NullableString** | Isolation segment name | 
+**MemQuota** | **int32** | Memory quota in bytes | 
+**Routable** | Pointer to **bool** | Whether the instance is routable | [optional] 
+**State** | **string** | Instance state | 
+**Type** | **string** | Process type | 
+**Uptime** | **int32** | Uptime in seconds | 
+**Usage** | [**ProcessStatsUsage**](ProcessStatsUsage.md) |  | 
 
 ## Methods
 
 ### NewProcessStats
 
-`func NewProcessStats() *ProcessStats`
+`func NewProcessStats(details NullableString, diskQuota int32, fdsQuota int32, host string, index int32, instancePorts []ProcessStatsInstancePortsInner, isolationSegment NullableString, memQuota int32, state string, type_ string, uptime int32, usage ProcessStatsUsage, ) *ProcessStats`
 
 NewProcessStats instantiates a new ProcessStats object
 This constructor will assign default values to properties that have it defined,
@@ -57,11 +57,6 @@ and a boolean to check if the value has been set.
 
 SetDetails sets Details field to given value.
 
-### HasDetails
-
-`func (o *ProcessStats) HasDetails() bool`
-
-HasDetails returns a boolean if a field has been set.
 
 ### SetDetailsNil
 
@@ -92,22 +87,7 @@ and a boolean to check if the value has been set.
 
 SetDiskQuota sets DiskQuota field to given value.
 
-### HasDiskQuota
 
-`func (o *ProcessStats) HasDiskQuota() bool`
-
-HasDiskQuota returns a boolean if a field has been set.
-
-### SetDiskQuotaNil
-
-`func (o *ProcessStats) SetDiskQuotaNil(b bool)`
-
- SetDiskQuotaNil sets the value for DiskQuota to be an explicit nil
-
-### UnsetDiskQuota
-`func (o *ProcessStats) UnsetDiskQuota()`
-
-UnsetDiskQuota ensures that no value is present for DiskQuota, not even an explicit nil
 ### GetFdsQuota
 
 `func (o *ProcessStats) GetFdsQuota() int32`
@@ -127,11 +107,6 @@ and a boolean to check if the value has been set.
 
 SetFdsQuota sets FdsQuota field to given value.
 
-### HasFdsQuota
-
-`func (o *ProcessStats) HasFdsQuota() bool`
-
-HasFdsQuota returns a boolean if a field has been set.
 
 ### GetHost
 
@@ -152,11 +127,6 @@ and a boolean to check if the value has been set.
 
 SetHost sets Host field to given value.
 
-### HasHost
-
-`func (o *ProcessStats) HasHost() bool`
-
-HasHost returns a boolean if a field has been set.
 
 ### GetIndex
 
@@ -177,11 +147,6 @@ and a boolean to check if the value has been set.
 
 SetIndex sets Index field to given value.
 
-### HasIndex
-
-`func (o *ProcessStats) HasIndex() bool`
-
-HasIndex returns a boolean if a field has been set.
 
 ### GetInstanceInternalIp
 
@@ -227,11 +192,6 @@ and a boolean to check if the value has been set.
 
 SetInstancePorts sets InstancePorts field to given value.
 
-### HasInstancePorts
-
-`func (o *ProcessStats) HasInstancePorts() bool`
-
-HasInstancePorts returns a boolean if a field has been set.
 
 ### GetIsolationSegment
 
@@ -252,11 +212,6 @@ and a boolean to check if the value has been set.
 
 SetIsolationSegment sets IsolationSegment field to given value.
 
-### HasIsolationSegment
-
-`func (o *ProcessStats) HasIsolationSegment() bool`
-
-HasIsolationSegment returns a boolean if a field has been set.
 
 ### SetIsolationSegmentNil
 
@@ -268,41 +223,6 @@ HasIsolationSegment returns a boolean if a field has been set.
 `func (o *ProcessStats) UnsetIsolationSegment()`
 
 UnsetIsolationSegment ensures that no value is present for IsolationSegment, not even an explicit nil
-### GetLogRateLimit
-
-`func (o *ProcessStats) GetLogRateLimit() int32`
-
-GetLogRateLimit returns the LogRateLimit field if non-nil, zero value otherwise.
-
-### GetLogRateLimitOk
-
-`func (o *ProcessStats) GetLogRateLimitOk() (*int32, bool)`
-
-GetLogRateLimitOk returns a tuple with the LogRateLimit field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLogRateLimit
-
-`func (o *ProcessStats) SetLogRateLimit(v int32)`
-
-SetLogRateLimit sets LogRateLimit field to given value.
-
-### HasLogRateLimit
-
-`func (o *ProcessStats) HasLogRateLimit() bool`
-
-HasLogRateLimit returns a boolean if a field has been set.
-
-### SetLogRateLimitNil
-
-`func (o *ProcessStats) SetLogRateLimitNil(b bool)`
-
- SetLogRateLimitNil sets the value for LogRateLimit to be an explicit nil
-
-### UnsetLogRateLimit
-`func (o *ProcessStats) UnsetLogRateLimit()`
-
-UnsetLogRateLimit ensures that no value is present for LogRateLimit, not even an explicit nil
 ### GetMemQuota
 
 `func (o *ProcessStats) GetMemQuota() int32`
@@ -322,22 +242,32 @@ and a boolean to check if the value has been set.
 
 SetMemQuota sets MemQuota field to given value.
 
-### HasMemQuota
 
-`func (o *ProcessStats) HasMemQuota() bool`
+### GetRoutable
 
-HasMemQuota returns a boolean if a field has been set.
+`func (o *ProcessStats) GetRoutable() bool`
 
-### SetMemQuotaNil
+GetRoutable returns the Routable field if non-nil, zero value otherwise.
 
-`func (o *ProcessStats) SetMemQuotaNil(b bool)`
+### GetRoutableOk
 
- SetMemQuotaNil sets the value for MemQuota to be an explicit nil
+`func (o *ProcessStats) GetRoutableOk() (*bool, bool)`
 
-### UnsetMemQuota
-`func (o *ProcessStats) UnsetMemQuota()`
+GetRoutableOk returns a tuple with the Routable field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
 
-UnsetMemQuota ensures that no value is present for MemQuota, not even an explicit nil
+### SetRoutable
+
+`func (o *ProcessStats) SetRoutable(v bool)`
+
+SetRoutable sets Routable field to given value.
+
+### HasRoutable
+
+`func (o *ProcessStats) HasRoutable() bool`
+
+HasRoutable returns a boolean if a field has been set.
+
 ### GetState
 
 `func (o *ProcessStats) GetState() string`
@@ -357,11 +287,6 @@ and a boolean to check if the value has been set.
 
 SetState sets State field to given value.
 
-### HasState
-
-`func (o *ProcessStats) HasState() bool`
-
-HasState returns a boolean if a field has been set.
 
 ### GetType
 
@@ -382,11 +307,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-### HasType
-
-`func (o *ProcessStats) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 ### GetUptime
 
@@ -407,11 +327,6 @@ and a boolean to check if the value has been set.
 
 SetUptime sets Uptime field to given value.
 
-### HasUptime
-
-`func (o *ProcessStats) HasUptime() bool`
-
-HasUptime returns a boolean if a field has been set.
 
 ### GetUsage
 
@@ -432,11 +347,6 @@ and a boolean to check if the value has been set.
 
 SetUsage sets Usage field to given value.
 
-### HasUsage
-
-`func (o *ProcessStats) HasUsage() bool`
-
-HasUsage returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

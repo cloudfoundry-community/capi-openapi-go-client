@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Guid** | Pointer to **string** |  | [optional] 
+**Guid** | Pointer to **string** | GUID of the space (null for organization roles) | [optional] 
 
 ## Methods
 

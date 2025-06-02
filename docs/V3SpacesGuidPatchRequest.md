@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetMetadata
 
-`func (o *V3SpacesGuidPatchRequest) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *V3SpacesGuidPatchRequest) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *V3SpacesGuidPatchRequest) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *V3SpacesGuidPatchRequest) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *V3SpacesGuidPatchRequest) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *V3SpacesGuidPatchRequest) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

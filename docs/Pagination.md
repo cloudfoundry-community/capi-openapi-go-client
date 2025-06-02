@@ -4,18 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**First** | Pointer to [**Link**](Link.md) |  | [optional] 
-**Last** | Pointer to [**Link**](Link.md) |  | [optional] 
-**Next** | Pointer to [**Link**](Link.md) |  | [optional] 
-**Previous** | Pointer to [**NullableListOrganizationQuotas200ResponsePaginationNext**](ListOrganizationQuotas200ResponsePaginationNext.md) |  | [optional] 
-**TotalPages** | Pointer to **int32** |  | [optional] 
-**TotalResults** | Pointer to **int32** |  | [optional] 
+**First** | [**PaginationFirst**](PaginationFirst.md) |  | 
+**Last** | [**PaginationLast**](PaginationLast.md) |  | 
+**Next** | Pointer to [**NullablePaginationNext**](PaginationNext.md) |  | [optional] 
+**Previous** | Pointer to [**NullablePaginationPrevious**](PaginationPrevious.md) |  | [optional] 
+**TotalPages** | **int32** | Total number of pages | 
+**TotalResults** | **int32** | Total number of results across all pages | 
 
 ## Methods
 
 ### NewPagination
 
-`func NewPagination() *Pagination`
+`func NewPagination(first PaginationFirst, last PaginationLast, totalPages int32, totalResults int32, ) *Pagination`
 
 NewPagination instantiates a new Pagination object
 This constructor will assign default values to properties that have it defined,
@@ -32,70 +32,60 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetFirst
 
-`func (o *Pagination) GetFirst() Link`
+`func (o *Pagination) GetFirst() PaginationFirst`
 
 GetFirst returns the First field if non-nil, zero value otherwise.
 
 ### GetFirstOk
 
-`func (o *Pagination) GetFirstOk() (*Link, bool)`
+`func (o *Pagination) GetFirstOk() (*PaginationFirst, bool)`
 
 GetFirstOk returns a tuple with the First field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFirst
 
-`func (o *Pagination) SetFirst(v Link)`
+`func (o *Pagination) SetFirst(v PaginationFirst)`
 
 SetFirst sets First field to given value.
 
-### HasFirst
-
-`func (o *Pagination) HasFirst() bool`
-
-HasFirst returns a boolean if a field has been set.
 
 ### GetLast
 
-`func (o *Pagination) GetLast() Link`
+`func (o *Pagination) GetLast() PaginationLast`
 
 GetLast returns the Last field if non-nil, zero value otherwise.
 
 ### GetLastOk
 
-`func (o *Pagination) GetLastOk() (*Link, bool)`
+`func (o *Pagination) GetLastOk() (*PaginationLast, bool)`
 
 GetLastOk returns a tuple with the Last field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLast
 
-`func (o *Pagination) SetLast(v Link)`
+`func (o *Pagination) SetLast(v PaginationLast)`
 
 SetLast sets Last field to given value.
 
-### HasLast
-
-`func (o *Pagination) HasLast() bool`
-
-HasLast returns a boolean if a field has been set.
 
 ### GetNext
 
-`func (o *Pagination) GetNext() Link`
+`func (o *Pagination) GetNext() PaginationNext`
 
 GetNext returns the Next field if non-nil, zero value otherwise.
 
 ### GetNextOk
 
-`func (o *Pagination) GetNextOk() (*Link, bool)`
+`func (o *Pagination) GetNextOk() (*PaginationNext, bool)`
 
 GetNextOk returns a tuple with the Next field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNext
 
-`func (o *Pagination) SetNext(v Link)`
+`func (o *Pagination) SetNext(v PaginationNext)`
 
 SetNext sets Next field to given value.
 
@@ -105,22 +95,32 @@ SetNext sets Next field to given value.
 
 HasNext returns a boolean if a field has been set.
 
+### SetNextNil
+
+`func (o *Pagination) SetNextNil(b bool)`
+
+ SetNextNil sets the value for Next to be an explicit nil
+
+### UnsetNext
+`func (o *Pagination) UnsetNext()`
+
+UnsetNext ensures that no value is present for Next, not even an explicit nil
 ### GetPrevious
 
-`func (o *Pagination) GetPrevious() ListOrganizationQuotas200ResponsePaginationNext`
+`func (o *Pagination) GetPrevious() PaginationPrevious`
 
 GetPrevious returns the Previous field if non-nil, zero value otherwise.
 
 ### GetPreviousOk
 
-`func (o *Pagination) GetPreviousOk() (*ListOrganizationQuotas200ResponsePaginationNext, bool)`
+`func (o *Pagination) GetPreviousOk() (*PaginationPrevious, bool)`
 
 GetPreviousOk returns a tuple with the Previous field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPrevious
 
-`func (o *Pagination) SetPrevious(v ListOrganizationQuotas200ResponsePaginationNext)`
+`func (o *Pagination) SetPrevious(v PaginationPrevious)`
 
 SetPrevious sets Previous field to given value.
 
@@ -159,11 +159,6 @@ and a boolean to check if the value has been set.
 
 SetTotalPages sets TotalPages field to given value.
 
-### HasTotalPages
-
-`func (o *Pagination) HasTotalPages() bool`
-
-HasTotalPages returns a boolean if a field has been set.
 
 ### GetTotalResults
 
@@ -184,11 +179,6 @@ and a boolean to check if the value has been set.
 
 SetTotalResults sets TotalResults field to given value.
 
-### HasTotalResults
-
-`func (o *Pagination) HasTotalResults() bool`
-
-HasTotalResults returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

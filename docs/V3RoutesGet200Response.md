@@ -4,7 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Pagination** | Pointer to [**V3RoutesGet200ResponsePagination**](V3RoutesGet200ResponsePagination.md) |  | [optional] 
+**Included** | Pointer to [**V3RoutesGet200ResponseIncluded**](V3RoutesGet200ResponseIncluded.md) |  | [optional] 
+**Pagination** | Pointer to [**Pagination**](Pagination.md) |  | [optional] 
 **Resources** | Pointer to [**[]Route**](Route.md) |  | [optional] 
 
 ## Methods
@@ -26,22 +27,47 @@ NewV3RoutesGet200ResponseWithDefaults instantiates a new V3RoutesGet200Response 
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
+### GetIncluded
+
+`func (o *V3RoutesGet200Response) GetIncluded() V3RoutesGet200ResponseIncluded`
+
+GetIncluded returns the Included field if non-nil, zero value otherwise.
+
+### GetIncludedOk
+
+`func (o *V3RoutesGet200Response) GetIncludedOk() (*V3RoutesGet200ResponseIncluded, bool)`
+
+GetIncludedOk returns a tuple with the Included field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIncluded
+
+`func (o *V3RoutesGet200Response) SetIncluded(v V3RoutesGet200ResponseIncluded)`
+
+SetIncluded sets Included field to given value.
+
+### HasIncluded
+
+`func (o *V3RoutesGet200Response) HasIncluded() bool`
+
+HasIncluded returns a boolean if a field has been set.
+
 ### GetPagination
 
-`func (o *V3RoutesGet200Response) GetPagination() V3RoutesGet200ResponsePagination`
+`func (o *V3RoutesGet200Response) GetPagination() Pagination`
 
 GetPagination returns the Pagination field if non-nil, zero value otherwise.
 
 ### GetPaginationOk
 
-`func (o *V3RoutesGet200Response) GetPaginationOk() (*V3RoutesGet200ResponsePagination, bool)`
+`func (o *V3RoutesGet200Response) GetPaginationOk() (*Pagination, bool)`
 
 GetPaginationOk returns a tuple with the Pagination field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPagination
 
-`func (o *V3RoutesGet200Response) SetPagination(v V3RoutesGet200ResponsePagination)`
+`func (o *V3RoutesGet200Response) SetPagination(v Pagination)`
 
 SetPagination sets Pagination field to given value.
 

@@ -4,27 +4,27 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Command** | Pointer to **NullableString** |  | [optional] 
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**DiskInMb** | Pointer to **int32** |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**HealthCheck** | Pointer to [**HealthCheck**](HealthCheck.md) |  | [optional] 
-**Instances** | Pointer to **int32** |  | [optional] 
-**Links** | Pointer to [**ProcessLinks**](ProcessLinks.md) |  | [optional] 
-**LogRateLimitInBytesPerSecond** | Pointer to **int32** |  | [optional] 
-**MemoryInMb** | Pointer to **int32** |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
-**ReadinessHealthCheck** | Pointer to [**ReadinessHealthCheck**](ReadinessHealthCheck.md) |  | [optional] 
-**Relationships** | Pointer to [**ProcessRelationships**](ProcessRelationships.md) |  | [optional] 
-**Type** | Pointer to **string** |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
-**Version** | Pointer to **string** |  | [optional] 
+**Command** | **NullableString** | Start command for the process | 
+**CreatedAt** | **time.Time** |  | 
+**DiskInMb** | **int32** | Disk allocated per instance in MB | 
+**Guid** | **string** | Unique identifier for the process | 
+**HealthCheck** | [**ProcessHealthCheck**](ProcessHealthCheck.md) |  | 
+**Instances** | **int32** | Number of instances | 
+**Links** | [**ProcessLinks**](ProcessLinks.md) |  | 
+**LogRateLimitInBytesPerSecond** | **int32** | Log rate limit per instance (-1 for unlimited) | 
+**MemoryInMb** | **int32** | Memory allocated per instance in MB | 
+**Metadata** | [**V3AppsGuidTasksPostRequestMetadata**](V3AppsGuidTasksPostRequestMetadata.md) |  | 
+**ReadinessHealthCheck** | [**NullableProcessReadinessHealthCheck**](ProcessReadinessHealthCheck.md) |  | 
+**Relationships** | [**ProcessRelationships**](ProcessRelationships.md) |  | 
+**Type** | **string** | Process type (e.g., web, worker) | 
+**UpdatedAt** | **time.Time** |  | 
+**Version** | Pointer to **string** | Process version identifier | [optional] 
 
 ## Methods
 
 ### NewProcess
 
-`func NewProcess() *Process`
+`func NewProcess(command NullableString, createdAt time.Time, diskInMb int32, guid string, healthCheck ProcessHealthCheck, instances int32, links ProcessLinks, logRateLimitInBytesPerSecond int32, memoryInMb int32, metadata V3AppsGuidTasksPostRequestMetadata, readinessHealthCheck NullableProcessReadinessHealthCheck, relationships ProcessRelationships, type_ string, updatedAt time.Time, ) *Process`
 
 NewProcess instantiates a new Process object
 This constructor will assign default values to properties that have it defined,
@@ -58,11 +58,6 @@ and a boolean to check if the value has been set.
 
 SetCommand sets Command field to given value.
 
-### HasCommand
-
-`func (o *Process) HasCommand() bool`
-
-HasCommand returns a boolean if a field has been set.
 
 ### SetCommandNil
 
@@ -93,11 +88,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *Process) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetDiskInMb
 
@@ -118,11 +108,6 @@ and a boolean to check if the value has been set.
 
 SetDiskInMb sets DiskInMb field to given value.
 
-### HasDiskInMb
-
-`func (o *Process) HasDiskInMb() bool`
-
-HasDiskInMb returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -143,36 +128,26 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *Process) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetHealthCheck
 
-`func (o *Process) GetHealthCheck() HealthCheck`
+`func (o *Process) GetHealthCheck() ProcessHealthCheck`
 
 GetHealthCheck returns the HealthCheck field if non-nil, zero value otherwise.
 
 ### GetHealthCheckOk
 
-`func (o *Process) GetHealthCheckOk() (*HealthCheck, bool)`
+`func (o *Process) GetHealthCheckOk() (*ProcessHealthCheck, bool)`
 
 GetHealthCheckOk returns a tuple with the HealthCheck field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetHealthCheck
 
-`func (o *Process) SetHealthCheck(v HealthCheck)`
+`func (o *Process) SetHealthCheck(v ProcessHealthCheck)`
 
 SetHealthCheck sets HealthCheck field to given value.
 
-### HasHealthCheck
-
-`func (o *Process) HasHealthCheck() bool`
-
-HasHealthCheck returns a boolean if a field has been set.
 
 ### GetInstances
 
@@ -193,11 +168,6 @@ and a boolean to check if the value has been set.
 
 SetInstances sets Instances field to given value.
 
-### HasInstances
-
-`func (o *Process) HasInstances() bool`
-
-HasInstances returns a boolean if a field has been set.
 
 ### GetLinks
 
@@ -218,11 +188,6 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
-
-`func (o *Process) HasLinks() bool`
-
-HasLinks returns a boolean if a field has been set.
 
 ### GetLogRateLimitInBytesPerSecond
 
@@ -243,11 +208,6 @@ and a boolean to check if the value has been set.
 
 SetLogRateLimitInBytesPerSecond sets LogRateLimitInBytesPerSecond field to given value.
 
-### HasLogRateLimitInBytesPerSecond
-
-`func (o *Process) HasLogRateLimitInBytesPerSecond() bool`
-
-HasLogRateLimitInBytesPerSecond returns a boolean if a field has been set.
 
 ### GetMemoryInMb
 
@@ -268,62 +228,57 @@ and a boolean to check if the value has been set.
 
 SetMemoryInMb sets MemoryInMb field to given value.
 
-### HasMemoryInMb
-
-`func (o *Process) HasMemoryInMb() bool`
-
-HasMemoryInMb returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *Process) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *Process) GetMetadata() V3AppsGuidTasksPostRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *Process) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *Process) GetMetadataOk() (*V3AppsGuidTasksPostRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *Process) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *Process) SetMetadata(v V3AppsGuidTasksPostRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
-### HasMetadata
-
-`func (o *Process) HasMetadata() bool`
-
-HasMetadata returns a boolean if a field has been set.
 
 ### GetReadinessHealthCheck
 
-`func (o *Process) GetReadinessHealthCheck() ReadinessHealthCheck`
+`func (o *Process) GetReadinessHealthCheck() ProcessReadinessHealthCheck`
 
 GetReadinessHealthCheck returns the ReadinessHealthCheck field if non-nil, zero value otherwise.
 
 ### GetReadinessHealthCheckOk
 
-`func (o *Process) GetReadinessHealthCheckOk() (*ReadinessHealthCheck, bool)`
+`func (o *Process) GetReadinessHealthCheckOk() (*ProcessReadinessHealthCheck, bool)`
 
 GetReadinessHealthCheckOk returns a tuple with the ReadinessHealthCheck field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetReadinessHealthCheck
 
-`func (o *Process) SetReadinessHealthCheck(v ReadinessHealthCheck)`
+`func (o *Process) SetReadinessHealthCheck(v ProcessReadinessHealthCheck)`
 
 SetReadinessHealthCheck sets ReadinessHealthCheck field to given value.
 
-### HasReadinessHealthCheck
 
-`func (o *Process) HasReadinessHealthCheck() bool`
+### SetReadinessHealthCheckNil
 
-HasReadinessHealthCheck returns a boolean if a field has been set.
+`func (o *Process) SetReadinessHealthCheckNil(b bool)`
 
+ SetReadinessHealthCheckNil sets the value for ReadinessHealthCheck to be an explicit nil
+
+### UnsetReadinessHealthCheck
+`func (o *Process) UnsetReadinessHealthCheck()`
+
+UnsetReadinessHealthCheck ensures that no value is present for ReadinessHealthCheck, not even an explicit nil
 ### GetRelationships
 
 `func (o *Process) GetRelationships() ProcessRelationships`
@@ -343,11 +298,6 @@ and a boolean to check if the value has been set.
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *Process) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetType
 
@@ -368,11 +318,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-### HasType
-
-`func (o *Process) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -393,11 +338,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *Process) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 ### GetVersion
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **BrokerCatalog** | Pointer to [**BrokerCatalog**](BrokerCatalog.md) |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **DocumentationUrl** | Pointer to **string** |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Relationships** | Pointer to [**ServiceOfferingRelationships**](ServiceOfferingRelationships.md) |  | [optional] 
 **Requires** | Pointer to **[]string** |  | [optional] 
@@ -136,20 +136,20 @@ HasDocumentationUrl returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *ServiceOfferingUpdate) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *ServiceOfferingUpdate) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ServiceOfferingUpdate) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *ServiceOfferingUpdate) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ServiceOfferingUpdate) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *ServiceOfferingUpdate) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Pagination** | Pointer to [**V3RoutesGet200ResponsePagination**](V3RoutesGet200ResponsePagination.md) |  | [optional] 
+**Pagination** | Pointer to [**V3UsersGet200ResponsePagination**](V3UsersGet200ResponsePagination.md) |  | [optional] 
 **Resources** | Pointer to [**[]User**](User.md) |  | [optional] 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetPagination
 
-`func (o *V3UsersGet200Response) GetPagination() V3RoutesGet200ResponsePagination`
+`func (o *V3UsersGet200Response) GetPagination() V3UsersGet200ResponsePagination`
 
 GetPagination returns the Pagination field if non-nil, zero value otherwise.
 
 ### GetPaginationOk
 
-`func (o *V3UsersGet200Response) GetPaginationOk() (*V3RoutesGet200ResponsePagination, bool)`
+`func (o *V3UsersGet200Response) GetPaginationOk() (*V3UsersGet200ResponsePagination, bool)`
 
 GetPaginationOk returns a tuple with the Pagination field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPagination
 
-`func (o *V3UsersGet200Response) SetPagination(v V3RoutesGet200ResponsePagination)`
+`func (o *V3UsersGet200Response) SetPagination(v V3UsersGet200ResponsePagination)`
 
 SetPagination sets Pagination field to given value.
 

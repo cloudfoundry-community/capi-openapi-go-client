@@ -4,10 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Cpu** | Pointer to **float32** |  | [optional] 
-**Disk** | Pointer to **int32** |  | [optional] 
-**LogRate** | Pointer to **int32** |  | [optional] 
-**Mem** | Pointer to **int32** |  | [optional] 
+**Cpu** | Pointer to **float64** | CPU usage percentage | [optional] 
+**Disk** | Pointer to **int32** | Disk usage in bytes | [optional] 
+**Mem** | Pointer to **int32** | Memory usage in bytes | [optional] 
 **Time** | Pointer to **time.Time** |  | [optional] 
 
 ## Methods
@@ -31,20 +30,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetCpu
 
-`func (o *ProcessStatsUsage) GetCpu() float32`
+`func (o *ProcessStatsUsage) GetCpu() float64`
 
 GetCpu returns the Cpu field if non-nil, zero value otherwise.
 
 ### GetCpuOk
 
-`func (o *ProcessStatsUsage) GetCpuOk() (*float32, bool)`
+`func (o *ProcessStatsUsage) GetCpuOk() (*float64, bool)`
 
 GetCpuOk returns a tuple with the Cpu field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCpu
 
-`func (o *ProcessStatsUsage) SetCpu(v float32)`
+`func (o *ProcessStatsUsage) SetCpu(v float64)`
 
 SetCpu sets Cpu field to given value.
 
@@ -78,31 +77,6 @@ SetDisk sets Disk field to given value.
 `func (o *ProcessStatsUsage) HasDisk() bool`
 
 HasDisk returns a boolean if a field has been set.
-
-### GetLogRate
-
-`func (o *ProcessStatsUsage) GetLogRate() int32`
-
-GetLogRate returns the LogRate field if non-nil, zero value otherwise.
-
-### GetLogRateOk
-
-`func (o *ProcessStatsUsage) GetLogRateOk() (*int32, bool)`
-
-GetLogRateOk returns a tuple with the LogRate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLogRate
-
-`func (o *ProcessStatsUsage) SetLogRate(v int32)`
-
-SetLogRate sets LogRate field to given value.
-
-### HasLogRate
-
-`func (o *ProcessStatsUsage) HasLogRate() bool`
-
-HasLogRate returns a boolean if a field has been set.
 
 ### GetMem
 

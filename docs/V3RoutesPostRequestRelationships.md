@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Domain** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
-**Space** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
+**Domain** | [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | 
+**Space** | [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | 
 
 ## Methods
 
 ### NewV3RoutesPostRequestRelationships
 
-`func NewV3RoutesPostRequestRelationships() *V3RoutesPostRequestRelationships`
+`func NewV3RoutesPostRequestRelationships(domain V3AppsPostRequestRelationshipsSpace, space V3AppsPostRequestRelationshipsSpace, ) *V3RoutesPostRequestRelationships`
 
 NewV3RoutesPostRequestRelationships instantiates a new V3RoutesPostRequestRelationships object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetDomain sets Domain field to given value.
 
-### HasDomain
-
-`func (o *V3RoutesPostRequestRelationships) HasDomain() bool`
-
-HasDomain returns a boolean if a field has been set.
 
 ### GetSpace
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetSpace sets Space field to given value.
 
-### HasSpace
-
-`func (o *V3RoutesPostRequestRelationships) HasSpace() bool`
-
-HasSpace returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

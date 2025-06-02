@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**App** | Pointer to [**ToOneRelationship**](ToOneRelationship.md) |  | [optional] 
-**Revision** | Pointer to [**ToOneRelationship**](ToOneRelationship.md) |  | [optional] 
+**App** | Pointer to [**V3DropletsPostRequestRelationshipsApp**](V3DropletsPostRequestRelationshipsApp.md) |  | [optional] 
+**Revision** | Pointer to [**NullableAppRelationshipsCurrentDroplet**](AppRelationshipsCurrentDroplet.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetApp
 
-`func (o *ProcessRelationships) GetApp() ToOneRelationship`
+`func (o *ProcessRelationships) GetApp() V3DropletsPostRequestRelationshipsApp`
 
 GetApp returns the App field if non-nil, zero value otherwise.
 
 ### GetAppOk
 
-`func (o *ProcessRelationships) GetAppOk() (*ToOneRelationship, bool)`
+`func (o *ProcessRelationships) GetAppOk() (*V3DropletsPostRequestRelationshipsApp, bool)`
 
 GetAppOk returns a tuple with the App field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetApp
 
-`func (o *ProcessRelationships) SetApp(v ToOneRelationship)`
+`func (o *ProcessRelationships) SetApp(v V3DropletsPostRequestRelationshipsApp)`
 
 SetApp sets App field to given value.
 
@@ -53,20 +53,20 @@ HasApp returns a boolean if a field has been set.
 
 ### GetRevision
 
-`func (o *ProcessRelationships) GetRevision() ToOneRelationship`
+`func (o *ProcessRelationships) GetRevision() AppRelationshipsCurrentDroplet`
 
 GetRevision returns the Revision field if non-nil, zero value otherwise.
 
 ### GetRevisionOk
 
-`func (o *ProcessRelationships) GetRevisionOk() (*ToOneRelationship, bool)`
+`func (o *ProcessRelationships) GetRevisionOk() (*AppRelationshipsCurrentDroplet, bool)`
 
 GetRevisionOk returns a tuple with the Revision field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRevision
 
-`func (o *ProcessRelationships) SetRevision(v ToOneRelationship)`
+`func (o *ProcessRelationships) SetRevision(v AppRelationshipsCurrentDroplet)`
 
 SetRevision sets Revision field to given value.
 
@@ -76,6 +76,16 @@ SetRevision sets Revision field to given value.
 
 HasRevision returns a boolean if a field has been set.
 
+### SetRevisionNil
+
+`func (o *ProcessRelationships) SetRevisionNil(b bool)`
+
+ SetRevisionNil sets the value for Revision to be an explicit nil
+
+### UnsetRevision
+`func (o *ProcessRelationships) UnsetRevision()`
+
+UnsetRevision ensures that no value is present for Revision, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

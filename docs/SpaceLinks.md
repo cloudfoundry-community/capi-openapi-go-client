@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ApplyManifest** | Pointer to [**DropletLinksAssignCurrentDroplet**](DropletLinksAssignCurrentDroplet.md) |  | [optional] 
-**Features** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**Organization** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**Self** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
+**Features** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**Organization** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**Self** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
 
 ## Methods
 
@@ -55,20 +55,20 @@ HasApplyManifest returns a boolean if a field has been set.
 
 ### GetFeatures
 
-`func (o *SpaceLinks) GetFeatures() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *SpaceLinks) GetFeatures() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetFeatures returns the Features field if non-nil, zero value otherwise.
 
 ### GetFeaturesOk
 
-`func (o *SpaceLinks) GetFeaturesOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *SpaceLinks) GetFeaturesOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetFeaturesOk returns a tuple with the Features field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFeatures
 
-`func (o *SpaceLinks) SetFeatures(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *SpaceLinks) SetFeatures(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetFeatures sets Features field to given value.
 
@@ -80,20 +80,20 @@ HasFeatures returns a boolean if a field has been set.
 
 ### GetOrganization
 
-`func (o *SpaceLinks) GetOrganization() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *SpaceLinks) GetOrganization() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetOrganization returns the Organization field if non-nil, zero value otherwise.
 
 ### GetOrganizationOk
 
-`func (o *SpaceLinks) GetOrganizationOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *SpaceLinks) GetOrganizationOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetOrganizationOk returns a tuple with the Organization field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOrganization
 
-`func (o *SpaceLinks) SetOrganization(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *SpaceLinks) SetOrganization(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetOrganization sets Organization field to given value.
 
@@ -105,20 +105,20 @@ HasOrganization returns a boolean if a field has been set.
 
 ### GetSelf
 
-`func (o *SpaceLinks) GetSelf() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *SpaceLinks) GetSelf() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetSelf returns the Self field if non-nil, zero value otherwise.
 
 ### GetSelfOk
 
-`func (o *SpaceLinks) GetSelfOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *SpaceLinks) GetSelfOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSelf
 
-`func (o *SpaceLinks) SetSelf(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *SpaceLinks) SetSelf(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetSelf sets Self field to given value.
 

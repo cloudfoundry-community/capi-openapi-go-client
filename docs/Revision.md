@@ -4,24 +4,24 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**Deployable** | Pointer to **bool** |  | [optional] 
-**Description** | Pointer to **string** |  | [optional] 
-**Droplet** | Pointer to [**V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**Links** | Pointer to [**RevisionLinks**](RevisionLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidTasksPostRequestMetadata**](V3AppsGuidTasksPostRequestMetadata.md) |  | [optional] 
-**Processes** | Pointer to [**map[string]RevisionProcessesValue**](RevisionProcessesValue.md) |  | [optional] 
-**Relationships** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseRelationships**](V3AppsGuidDropletsCurrentGet200ResponseRelationships.md) |  | [optional] 
-**Sidecars** | Pointer to [**[]Sidecar**](Sidecar.md) |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
-**Version** | Pointer to **int32** |  | [optional] 
+**CreatedAt** | **time.Time** |  | 
+**Deployable** | **bool** | Whether this revision can be deployed | 
+**Description** | **NullableString** |  | 
+**Droplet** | [**V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData**](V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData.md) |  | 
+**Guid** | **string** |  | 
+**Links** | [**RevisionLinks**](RevisionLinks.md) |  | 
+**Metadata** | [**V3AppsGuidTasksPostRequestMetadata**](V3AppsGuidTasksPostRequestMetadata.md) |  | 
+**Processes** | [**map[string]RevisionProcessesValue**](RevisionProcessesValue.md) |  | 
+**Relationships** | Pointer to [**RevisionRelationships**](RevisionRelationships.md) |  | [optional] 
+**Sidecars** | [**[]Sidecar**](Sidecar.md) |  | 
+**UpdatedAt** | **time.Time** |  | 
+**Version** | **int32** | Revision version number | 
 
 ## Methods
 
 ### NewRevision
 
-`func NewRevision() *Revision`
+`func NewRevision(createdAt time.Time, deployable bool, description NullableString, droplet V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData, guid string, links RevisionLinks, metadata V3AppsGuidTasksPostRequestMetadata, processes map[string]RevisionProcessesValue, sidecars []Sidecar, updatedAt time.Time, version int32, ) *Revision`
 
 NewRevision instantiates a new Revision object
 This constructor will assign default values to properties that have it defined,
@@ -55,11 +55,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *Revision) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetDeployable
 
@@ -80,11 +75,6 @@ and a boolean to check if the value has been set.
 
 SetDeployable sets Deployable field to given value.
 
-### HasDeployable
-
-`func (o *Revision) HasDeployable() bool`
-
-HasDeployable returns a boolean if a field has been set.
 
 ### GetDescription
 
@@ -105,36 +95,36 @@ and a boolean to check if the value has been set.
 
 SetDescription sets Description field to given value.
 
-### HasDescription
 
-`func (o *Revision) HasDescription() bool`
+### SetDescriptionNil
 
-HasDescription returns a boolean if a field has been set.
+`func (o *Revision) SetDescriptionNil(b bool)`
 
+ SetDescriptionNil sets the value for Description to be an explicit nil
+
+### UnsetDescription
+`func (o *Revision) UnsetDescription()`
+
+UnsetDescription ensures that no value is present for Description, not even an explicit nil
 ### GetDroplet
 
-`func (o *Revision) GetDroplet() V3AppsPostRequestRelationshipsSpaceData`
+`func (o *Revision) GetDroplet() V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData`
 
 GetDroplet returns the Droplet field if non-nil, zero value otherwise.
 
 ### GetDropletOk
 
-`func (o *Revision) GetDropletOk() (*V3AppsPostRequestRelationshipsSpaceData, bool)`
+`func (o *Revision) GetDropletOk() (*V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData, bool)`
 
 GetDropletOk returns a tuple with the Droplet field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDroplet
 
-`func (o *Revision) SetDroplet(v V3AppsPostRequestRelationshipsSpaceData)`
+`func (o *Revision) SetDroplet(v V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData)`
 
 SetDroplet sets Droplet field to given value.
 
-### HasDroplet
-
-`func (o *Revision) HasDroplet() bool`
-
-HasDroplet returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -155,11 +145,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *Revision) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetLinks
 
@@ -180,11 +165,6 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
-
-`func (o *Revision) HasLinks() bool`
-
-HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
@@ -205,11 +185,6 @@ and a boolean to check if the value has been set.
 
 SetMetadata sets Metadata field to given value.
 
-### HasMetadata
-
-`func (o *Revision) HasMetadata() bool`
-
-HasMetadata returns a boolean if a field has been set.
 
 ### GetProcesses
 
@@ -230,28 +205,23 @@ and a boolean to check if the value has been set.
 
 SetProcesses sets Processes field to given value.
 
-### HasProcesses
-
-`func (o *Revision) HasProcesses() bool`
-
-HasProcesses returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *Revision) GetRelationships() V3AppsGuidDropletsCurrentGet200ResponseRelationships`
+`func (o *Revision) GetRelationships() RevisionRelationships`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *Revision) GetRelationshipsOk() (*V3AppsGuidDropletsCurrentGet200ResponseRelationships, bool)`
+`func (o *Revision) GetRelationshipsOk() (*RevisionRelationships, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *Revision) SetRelationships(v V3AppsGuidDropletsCurrentGet200ResponseRelationships)`
+`func (o *Revision) SetRelationships(v RevisionRelationships)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -280,11 +250,6 @@ and a boolean to check if the value has been set.
 
 SetSidecars sets Sidecars field to given value.
 
-### HasSidecars
-
-`func (o *Revision) HasSidecars() bool`
-
-HasSidecars returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -305,11 +270,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *Revision) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 ### GetVersion
 
@@ -330,11 +290,6 @@ and a boolean to check if the value has been set.
 
 SetVersion sets Version field to given value.
 
-### HasVersion
-
-`func (o *Revision) HasVersion() bool`
-
-HasVersion returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

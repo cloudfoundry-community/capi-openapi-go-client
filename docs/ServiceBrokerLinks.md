@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Self** | Pointer to [**Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
-**ServiceOfferings** | Pointer to [**Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
-**Space** | Pointer to [**Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
+**Self** | Pointer to [**Link**](Link.md) |  | [optional] 
+**ServiceOfferings** | Pointer to [**Link**](Link.md) |  | [optional] 
+**Space** | Pointer to [**Link**](Link.md) |  | [optional] 
 
 ## Methods
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetSelf
 
-`func (o *ServiceBrokerLinks) GetSelf() Get200ResponseLinksLogCache`
+`func (o *ServiceBrokerLinks) GetSelf() Link`
 
 GetSelf returns the Self field if non-nil, zero value otherwise.
 
 ### GetSelfOk
 
-`func (o *ServiceBrokerLinks) GetSelfOk() (*Get200ResponseLinksLogCache, bool)`
+`func (o *ServiceBrokerLinks) GetSelfOk() (*Link, bool)`
 
 GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSelf
 
-`func (o *ServiceBrokerLinks) SetSelf(v Get200ResponseLinksLogCache)`
+`func (o *ServiceBrokerLinks) SetSelf(v Link)`
 
 SetSelf sets Self field to given value.
 
@@ -54,20 +54,20 @@ HasSelf returns a boolean if a field has been set.
 
 ### GetServiceOfferings
 
-`func (o *ServiceBrokerLinks) GetServiceOfferings() Get200ResponseLinksLogCache`
+`func (o *ServiceBrokerLinks) GetServiceOfferings() Link`
 
 GetServiceOfferings returns the ServiceOfferings field if non-nil, zero value otherwise.
 
 ### GetServiceOfferingsOk
 
-`func (o *ServiceBrokerLinks) GetServiceOfferingsOk() (*Get200ResponseLinksLogCache, bool)`
+`func (o *ServiceBrokerLinks) GetServiceOfferingsOk() (*Link, bool)`
 
 GetServiceOfferingsOk returns a tuple with the ServiceOfferings field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetServiceOfferings
 
-`func (o *ServiceBrokerLinks) SetServiceOfferings(v Get200ResponseLinksLogCache)`
+`func (o *ServiceBrokerLinks) SetServiceOfferings(v Link)`
 
 SetServiceOfferings sets ServiceOfferings field to given value.
 
@@ -79,20 +79,20 @@ HasServiceOfferings returns a boolean if a field has been set.
 
 ### GetSpace
 
-`func (o *ServiceBrokerLinks) GetSpace() Get200ResponseLinksLogCache`
+`func (o *ServiceBrokerLinks) GetSpace() Link`
 
 GetSpace returns the Space field if non-nil, zero value otherwise.
 
 ### GetSpaceOk
 
-`func (o *ServiceBrokerLinks) GetSpaceOk() (*Get200ResponseLinksLogCache, bool)`
+`func (o *ServiceBrokerLinks) GetSpaceOk() (*Link, bool)`
 
 GetSpaceOk returns a tuple with the Space field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSpace
 
-`func (o *ServiceBrokerLinks) SetSpace(v Get200ResponseLinksLogCache)`
+`func (o *ServiceBrokerLinks) SetSpace(v Link)`
 
 SetSpace sets Space field to given value.
 

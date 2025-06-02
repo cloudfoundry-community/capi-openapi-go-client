@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**[]V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | [optional] 
-**Links** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinks**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinks.md) |  | [optional] 
+**Data** | Pointer to [**[]V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseDataInner**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseDataInner.md) |  | [optional] 
+**Links** | Pointer to [**V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks**](V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetData
 
-`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetData() []V3AppsPostRequestRelationshipsSpaceData`
+`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetData() []V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseDataInner`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetDataOk() (*[]V3AppsPostRequestRelationshipsSpaceData, bool)`
+`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetDataOk() (*[]V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseDataInner, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) SetData(v []V3AppsPostRequestRelationshipsSpaceData)`
+`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) SetData(v []V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseDataInner)`
 
 SetData sets Data field to given value.
 
@@ -53,20 +53,20 @@ HasData returns a boolean if a field has been set.
 
 ### GetLinks
 
-`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetLinks() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinks`
+`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetLinks() V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks`
 
 GetLinks returns the Links field if non-nil, zero value otherwise.
 
 ### GetLinksOk
 
-`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetLinksOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinks, bool)`
+`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) GetLinksOk() (*V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks, bool)`
 
 GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLinks
 
-`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) SetLinks(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinks)`
+`func (o *V3IsolationSegmentsGuidRelationshipsOrganizationsGet200Response) SetLinks(v V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks)`
 
 SetLinks sets Links field to given value.
 

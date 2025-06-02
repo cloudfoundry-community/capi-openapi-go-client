@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**V3DropletsPostRequestRelationshipsAppData**](V3DropletsPostRequestRelationshipsAppData.md) |  | [optional] 
+**Data** | Pointer to [**V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData**](V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData.md) |  | [optional] 
 
 ## Methods
 
@@ -27,20 +27,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetData
 
-`func (o *V3DropletsPostRequestRelationshipsApp) GetData() V3DropletsPostRequestRelationshipsAppData`
+`func (o *V3DropletsPostRequestRelationshipsApp) GetData() V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *V3DropletsPostRequestRelationshipsApp) GetDataOk() (*V3DropletsPostRequestRelationshipsAppData, bool)`
+`func (o *V3DropletsPostRequestRelationshipsApp) GetDataOk() (*V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *V3DropletsPostRequestRelationshipsApp) SetData(v V3DropletsPostRequestRelationshipsAppData)`
+`func (o *V3DropletsPostRequestRelationshipsApp) SetData(v V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData)`
 
 SetData sets Data field to given value.
 

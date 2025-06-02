@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Credentials** | Pointer to **map[string]interface{}** |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **RouteServiceUrl** | Pointer to **string** |  | [optional] 
 **SyslogDrainUrl** | Pointer to **string** |  | [optional] 
@@ -57,20 +57,20 @@ HasCredentials returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *UserProvidedServiceInstanceUpdate) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *UserProvidedServiceInstanceUpdate) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *UserProvidedServiceInstanceUpdate) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *UserProvidedServiceInstanceUpdate) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *UserProvidedServiceInstanceUpdate) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *UserProvidedServiceInstanceUpdate) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

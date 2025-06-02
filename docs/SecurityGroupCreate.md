@@ -4,15 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**GloballyEnabled** | Pointer to [**SecurityGroupGloballyEnabled**](SecurityGroupGloballyEnabled.md) |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Rules** | Pointer to [**[]Rule**](Rule.md) |  | [optional] 
+**GloballyEnabled** | Pointer to [**SecurityGroupCreateGloballyEnabled**](SecurityGroupCreateGloballyEnabled.md) |  | [optional] 
+**Metadata** | Pointer to [**SecurityGroupCreateMetadata**](SecurityGroupCreateMetadata.md) |  | [optional] 
+**Name** | **string** | Human-readable name for the security group | 
+**Relationships** | Pointer to [**SecurityGroupCreateRelationships**](SecurityGroupCreateRelationships.md) |  | [optional] 
+**Rules** | Pointer to [**[]Rule**](Rule.md) | Array of egress traffic rules | [optional] 
 
 ## Methods
 
 ### NewSecurityGroupCreate
 
-`func NewSecurityGroupCreate() *SecurityGroupCreate`
+`func NewSecurityGroupCreate(name string, ) *SecurityGroupCreate`
 
 NewSecurityGroupCreate instantiates a new SecurityGroupCreate object
 This constructor will assign default values to properties that have it defined,
@@ -29,20 +31,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetGloballyEnabled
 
-`func (o *SecurityGroupCreate) GetGloballyEnabled() SecurityGroupGloballyEnabled`
+`func (o *SecurityGroupCreate) GetGloballyEnabled() SecurityGroupCreateGloballyEnabled`
 
 GetGloballyEnabled returns the GloballyEnabled field if non-nil, zero value otherwise.
 
 ### GetGloballyEnabledOk
 
-`func (o *SecurityGroupCreate) GetGloballyEnabledOk() (*SecurityGroupGloballyEnabled, bool)`
+`func (o *SecurityGroupCreate) GetGloballyEnabledOk() (*SecurityGroupCreateGloballyEnabled, bool)`
 
 GetGloballyEnabledOk returns a tuple with the GloballyEnabled field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGloballyEnabled
 
-`func (o *SecurityGroupCreate) SetGloballyEnabled(v SecurityGroupGloballyEnabled)`
+`func (o *SecurityGroupCreate) SetGloballyEnabled(v SecurityGroupCreateGloballyEnabled)`
 
 SetGloballyEnabled sets GloballyEnabled field to given value.
 
@@ -51,6 +53,31 @@ SetGloballyEnabled sets GloballyEnabled field to given value.
 `func (o *SecurityGroupCreate) HasGloballyEnabled() bool`
 
 HasGloballyEnabled returns a boolean if a field has been set.
+
+### GetMetadata
+
+`func (o *SecurityGroupCreate) GetMetadata() SecurityGroupCreateMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *SecurityGroupCreate) GetMetadataOk() (*SecurityGroupCreateMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *SecurityGroupCreate) SetMetadata(v SecurityGroupCreateMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *SecurityGroupCreate) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -71,11 +98,31 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
 
-`func (o *SecurityGroupCreate) HasName() bool`
+### GetRelationships
 
-HasName returns a boolean if a field has been set.
+`func (o *SecurityGroupCreate) GetRelationships() SecurityGroupCreateRelationships`
+
+GetRelationships returns the Relationships field if non-nil, zero value otherwise.
+
+### GetRelationshipsOk
+
+`func (o *SecurityGroupCreate) GetRelationshipsOk() (*SecurityGroupCreateRelationships, bool)`
+
+GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRelationships
+
+`func (o *SecurityGroupCreate) SetRelationships(v SecurityGroupCreateRelationships)`
+
+SetRelationships sets Relationships field to given value.
+
+### HasRelationships
+
+`func (o *SecurityGroupCreate) HasRelationships() bool`
+
+HasRelationships returns a boolean if a field has been set.
 
 ### GetRules
 

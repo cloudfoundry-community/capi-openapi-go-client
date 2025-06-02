@@ -4,19 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EnvironmentVariables** | Pointer to **map[string]interface{}** | Environment variables for the app. | [optional] 
+**EnvironmentVariables** | Pointer to **map[string]string** | Environment variables for the app | [optional] 
 **Lifecycle** | Pointer to [**V3AppsPostRequestLifecycle**](V3AppsPostRequestLifecycle.md) |  | [optional] 
-**Metadata** | Pointer to **map[string]interface{}** | Metadata of the app. | [optional] 
-**Name** | **string** | Name of the app. | 
-**Relationships** | Pointer to [**V3AppsPostRequestRelationships**](V3AppsPostRequestRelationships.md) |  | [optional] 
-**SpaceGuid** | **string** | GUID of the space. | 
-**State** | Pointer to **string** | Desired state of the app. | [optional] 
+**Metadata** | Pointer to [**V3AppsPostRequestMetadata**](V3AppsPostRequestMetadata.md) |  | [optional] 
+**Name** | **string** | Name of the app (unique within space) | 
+**Relationships** | [**V3AppsPostRequestRelationships**](V3AppsPostRequestRelationships.md) |  | 
+**State** | Pointer to **string** | Initial desired state of the app | [optional] [default to "STOPPED"]
 
 ## Methods
 
 ### NewV3AppsPostRequest
 
-`func NewV3AppsPostRequest(name string, spaceGuid string, ) *V3AppsPostRequest`
+`func NewV3AppsPostRequest(name string, relationships V3AppsPostRequestRelationships, ) *V3AppsPostRequest`
 
 NewV3AppsPostRequest instantiates a new V3AppsPostRequest object
 This constructor will assign default values to properties that have it defined,
@@ -33,20 +32,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetEnvironmentVariables
 
-`func (o *V3AppsPostRequest) GetEnvironmentVariables() map[string]interface{}`
+`func (o *V3AppsPostRequest) GetEnvironmentVariables() map[string]string`
 
 GetEnvironmentVariables returns the EnvironmentVariables field if non-nil, zero value otherwise.
 
 ### GetEnvironmentVariablesOk
 
-`func (o *V3AppsPostRequest) GetEnvironmentVariablesOk() (*map[string]interface{}, bool)`
+`func (o *V3AppsPostRequest) GetEnvironmentVariablesOk() (*map[string]string, bool)`
 
 GetEnvironmentVariablesOk returns a tuple with the EnvironmentVariables field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetEnvironmentVariables
 
-`func (o *V3AppsPostRequest) SetEnvironmentVariables(v map[string]interface{})`
+`func (o *V3AppsPostRequest) SetEnvironmentVariables(v map[string]string)`
 
 SetEnvironmentVariables sets EnvironmentVariables field to given value.
 
@@ -83,20 +82,20 @@ HasLifecycle returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *V3AppsPostRequest) GetMetadata() map[string]interface{}`
+`func (o *V3AppsPostRequest) GetMetadata() V3AppsPostRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *V3AppsPostRequest) GetMetadataOk() (*map[string]interface{}, bool)`
+`func (o *V3AppsPostRequest) GetMetadataOk() (*V3AppsPostRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *V3AppsPostRequest) SetMetadata(v map[string]interface{})`
+`func (o *V3AppsPostRequest) SetMetadata(v V3AppsPostRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
@@ -144,31 +143,6 @@ and a boolean to check if the value has been set.
 `func (o *V3AppsPostRequest) SetRelationships(v V3AppsPostRequestRelationships)`
 
 SetRelationships sets Relationships field to given value.
-
-### HasRelationships
-
-`func (o *V3AppsPostRequest) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
-
-### GetSpaceGuid
-
-`func (o *V3AppsPostRequest) GetSpaceGuid() string`
-
-GetSpaceGuid returns the SpaceGuid field if non-nil, zero value otherwise.
-
-### GetSpaceGuidOk
-
-`func (o *V3AppsPostRequest) GetSpaceGuidOk() (*string, bool)`
-
-GetSpaceGuidOk returns a tuple with the SpaceGuid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSpaceGuid
-
-`func (o *V3AppsPostRequest) SetSpaceGuid(v string)`
-
-SetSpaceGuid sets SpaceGuid field to given value.
 
 
 ### GetState

@@ -5,15 +5,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Data** | Pointer to [**V3PackagesPostRequestData**](V3PackagesPostRequestData.md) |  | [optional] 
-**Metadata** | Pointer to [**V3PackagesPostRequestMetadata**](V3PackagesPostRequestMetadata.md) |  | [optional] 
-**Relationships** | Pointer to [**V3PackagesPostRequestRelationships**](V3PackagesPostRequestRelationships.md) |  | [optional] 
-**Type** | Pointer to **string** | Type of the package; valid values are bits, docker | [optional] 
+**Metadata** | Pointer to [**V3AppsGuidPatchRequestMetadata**](V3AppsGuidPatchRequestMetadata.md) |  | [optional] 
+**Relationships** | [**V3PackagesPostRequestRelationships**](V3PackagesPostRequestRelationships.md) |  | 
+**Type** | **string** | Type of package | 
 
 ## Methods
 
 ### NewV3PackagesPostRequest
 
-`func NewV3PackagesPostRequest() *V3PackagesPostRequest`
+`func NewV3PackagesPostRequest(relationships V3PackagesPostRequestRelationships, type_ string, ) *V3PackagesPostRequest`
 
 NewV3PackagesPostRequest instantiates a new V3PackagesPostRequest object
 This constructor will assign default values to properties that have it defined,
@@ -55,20 +55,20 @@ HasData returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *V3PackagesPostRequest) GetMetadata() V3PackagesPostRequestMetadata`
+`func (o *V3PackagesPostRequest) GetMetadata() V3AppsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *V3PackagesPostRequest) GetMetadataOk() (*V3PackagesPostRequestMetadata, bool)`
+`func (o *V3PackagesPostRequest) GetMetadataOk() (*V3AppsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *V3PackagesPostRequest) SetMetadata(v V3PackagesPostRequestMetadata)`
+`func (o *V3PackagesPostRequest) SetMetadata(v V3AppsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
@@ -97,11 +97,6 @@ and a boolean to check if the value has been set.
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *V3PackagesPostRequest) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetType
 
@@ -122,11 +117,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-### HasType
-
-`func (o *V3PackagesPostRequest) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

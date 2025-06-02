@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Guid** | Pointer to **string** | Unique identifier for the organization where the plan is available | [optional] 
-**Name** | Pointer to **string** | Name of the organization where the plan is available | [optional] 
+**Guid** | **string** | Unique identifier for the organization | 
+**Name** | **string** | Name of the organization | 
 
 ## Methods
 
 ### NewOrganizationVisibility
 
-`func NewOrganizationVisibility() *OrganizationVisibility`
+`func NewOrganizationVisibility(guid string, name string, ) *OrganizationVisibility`
 
 NewOrganizationVisibility instantiates a new OrganizationVisibility object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *OrganizationVisibility) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetName
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *OrganizationVisibility) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

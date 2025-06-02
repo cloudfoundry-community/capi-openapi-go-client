@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Guid** | Pointer to **string** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
+**Guid** | Pointer to **string** | Space GUID | [optional] 
+**Name** | Pointer to **string** | Space name | [optional] 
 
 ## Methods
 

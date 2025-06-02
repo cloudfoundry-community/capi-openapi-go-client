@@ -4,21 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | **time.Time** | The time with zone when the object was created | 
-**Data** | Pointer to [**PackageData**](PackageData.md) |  | [optional] 
+**CreatedAt** | **time.Time** | When the package was created | 
+**Data** | [**PackageData**](PackageData.md) |  | 
 **Guid** | **string** | Unique identifier for the package | 
-**Links** | Pointer to [**PackageLinks**](PackageLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3PackagesPostRequestMetadata**](V3PackagesPostRequestMetadata.md) |  | [optional] 
-**Relationships** | Pointer to [**V3PackagesPostRequestRelationships**](V3PackagesPostRequestRelationships.md) |  | [optional] 
-**State** | **string** | State of the package; valid states are AWAITING_UPLOAD, PROCESSING_UPLOAD, READY, FAILED, COPYING, EXPIRED | 
-**Type** | **string** | Package type; valid values are bits, docker | 
-**UpdatedAt** | **time.Time** | The time with zone when the object was last updated | 
+**Links** | [**PackageLinks**](PackageLinks.md) |  | 
+**Metadata** | [**V3AppsGuidTasksPostRequestMetadata**](V3AppsGuidTasksPostRequestMetadata.md) |  | 
+**Relationships** | [**V3DropletsPostRequestRelationships**](V3DropletsPostRequestRelationships.md) |  | 
+**State** | **string** | Current state of the package | 
+**Type** | **string** | Type of package | 
+**UpdatedAt** | **time.Time** | When the package was last updated | 
 
 ## Methods
 
 ### NewPackage
 
-`func NewPackage(createdAt time.Time, guid string, state string, type_ string, updatedAt time.Time, ) *Package`
+`func NewPackage(createdAt time.Time, data PackageData, guid string, links PackageLinks, metadata V3AppsGuidTasksPostRequestMetadata, relationships V3DropletsPostRequestRelationships, state string, type_ string, updatedAt time.Time, ) *Package`
 
 NewPackage instantiates a new Package object
 This constructor will assign default values to properties that have it defined,
@@ -72,11 +72,6 @@ and a boolean to check if the value has been set.
 
 SetData sets Data field to given value.
 
-### HasData
-
-`func (o *Package) HasData() bool`
-
-HasData returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -117,61 +112,46 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
-
-`func (o *Package) HasLinks() bool`
-
-HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *Package) GetMetadata() V3PackagesPostRequestMetadata`
+`func (o *Package) GetMetadata() V3AppsGuidTasksPostRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *Package) GetMetadataOk() (*V3PackagesPostRequestMetadata, bool)`
+`func (o *Package) GetMetadataOk() (*V3AppsGuidTasksPostRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *Package) SetMetadata(v V3PackagesPostRequestMetadata)`
+`func (o *Package) SetMetadata(v V3AppsGuidTasksPostRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
-### HasMetadata
-
-`func (o *Package) HasMetadata() bool`
-
-HasMetadata returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *Package) GetRelationships() V3PackagesPostRequestRelationships`
+`func (o *Package) GetRelationships() V3DropletsPostRequestRelationships`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *Package) GetRelationshipsOk() (*V3PackagesPostRequestRelationships, bool)`
+`func (o *Package) GetRelationshipsOk() (*V3DropletsPostRequestRelationships, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *Package) SetRelationships(v V3PackagesPostRequestRelationships)`
+`func (o *Package) SetRelationships(v V3DropletsPostRequestRelationships)`
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *Package) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetState
 

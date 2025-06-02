@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Quota** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
+**Quota** | Pointer to [**AssignDefaultIsolationSegmentRequest**](AssignDefaultIsolationSegmentRequest.md) |  | [optional] 
 
 ## Methods
 
@@ -27,20 +27,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetQuota
 
-`func (o *OrganizationRelationships) GetQuota() V3AppsPostRequestRelationshipsSpace`
+`func (o *OrganizationRelationships) GetQuota() AssignDefaultIsolationSegmentRequest`
 
 GetQuota returns the Quota field if non-nil, zero value otherwise.
 
 ### GetQuotaOk
 
-`func (o *OrganizationRelationships) GetQuotaOk() (*V3AppsPostRequestRelationshipsSpace, bool)`
+`func (o *OrganizationRelationships) GetQuotaOk() (*AssignDefaultIsolationSegmentRequest, bool)`
 
 GetQuotaOk returns a tuple with the Quota field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetQuota
 
-`func (o *OrganizationRelationships) SetQuota(v V3AppsPostRequestRelationshipsSpace)`
+`func (o *OrganizationRelationships) SetQuota(v AssignDefaultIsolationSegmentRequest)`
 
 SetQuota sets Quota field to given value.
 

@@ -4,7 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Location** | Pointer to **string** | URL to track the deletion job | [optional] 
+**Guid** | Pointer to **string** |  | [optional] 
+**Links** | Pointer to [**V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks**](V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks.md) |  | [optional] 
 
 ## Methods
 
@@ -25,30 +26,55 @@ NewDeleteOrganizationQuota202ResponseWithDefaults instantiates a new DeleteOrgan
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetLocation
+### GetGuid
 
-`func (o *DeleteOrganizationQuota202Response) GetLocation() string`
+`func (o *DeleteOrganizationQuota202Response) GetGuid() string`
 
-GetLocation returns the Location field if non-nil, zero value otherwise.
+GetGuid returns the Guid field if non-nil, zero value otherwise.
 
-### GetLocationOk
+### GetGuidOk
 
-`func (o *DeleteOrganizationQuota202Response) GetLocationOk() (*string, bool)`
+`func (o *DeleteOrganizationQuota202Response) GetGuidOk() (*string, bool)`
 
-GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
+GetGuidOk returns a tuple with the Guid field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLocation
+### SetGuid
 
-`func (o *DeleteOrganizationQuota202Response) SetLocation(v string)`
+`func (o *DeleteOrganizationQuota202Response) SetGuid(v string)`
 
-SetLocation sets Location field to given value.
+SetGuid sets Guid field to given value.
 
-### HasLocation
+### HasGuid
 
-`func (o *DeleteOrganizationQuota202Response) HasLocation() bool`
+`func (o *DeleteOrganizationQuota202Response) HasGuid() bool`
 
-HasLocation returns a boolean if a field has been set.
+HasGuid returns a boolean if a field has been set.
+
+### GetLinks
+
+`func (o *DeleteOrganizationQuota202Response) GetLinks() V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks`
+
+GetLinks returns the Links field if non-nil, zero value otherwise.
+
+### GetLinksOk
+
+`func (o *DeleteOrganizationQuota202Response) GetLinksOk() (*V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks, bool)`
+
+GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLinks
+
+`func (o *DeleteOrganizationQuota202Response) SetLinks(v V3IsolationSegmentsGuidRelationshipsSpacesGet200ResponseLinks)`
+
+SetLinks sets Links field to given value.
+
+### HasLinks
+
+`func (o *DeleteOrganizationQuota202Response) HasLinks() bool`
+
+HasLinks returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

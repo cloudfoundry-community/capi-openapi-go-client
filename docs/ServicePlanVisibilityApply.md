@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Organizations** | Pointer to [**[]V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | [optional] 
-**Type** | Pointer to **string** | Denotes the visibility of the plan; can be public, admin, organization | [optional] 
+**Organizations** | Pointer to [**[]ApplyOrganizationQuotaToOrganizationsRequestDataInner**](ApplyOrganizationQuotaToOrganizationsRequestDataInner.md) | List of organizations to add to the visibility list | [optional] 
+**Type** | **string** | Denotes the visibility of the plan | 
 
 ## Methods
 
 ### NewServicePlanVisibilityApply
 
-`func NewServicePlanVisibilityApply() *ServicePlanVisibilityApply`
+`func NewServicePlanVisibilityApply(type_ string, ) *ServicePlanVisibilityApply`
 
 NewServicePlanVisibilityApply instantiates a new ServicePlanVisibilityApply object
 This constructor will assign default values to properties that have it defined,
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetOrganizations
 
-`func (o *ServicePlanVisibilityApply) GetOrganizations() []V3AppsPostRequestRelationshipsSpaceData`
+`func (o *ServicePlanVisibilityApply) GetOrganizations() []ApplyOrganizationQuotaToOrganizationsRequestDataInner`
 
 GetOrganizations returns the Organizations field if non-nil, zero value otherwise.
 
 ### GetOrganizationsOk
 
-`func (o *ServicePlanVisibilityApply) GetOrganizationsOk() (*[]V3AppsPostRequestRelationshipsSpaceData, bool)`
+`func (o *ServicePlanVisibilityApply) GetOrganizationsOk() (*[]ApplyOrganizationQuotaToOrganizationsRequestDataInner, bool)`
 
 GetOrganizationsOk returns a tuple with the Organizations field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOrganizations
 
-`func (o *ServicePlanVisibilityApply) SetOrganizations(v []V3AppsPostRequestRelationshipsSpaceData)`
+`func (o *ServicePlanVisibilityApply) SetOrganizations(v []ApplyOrganizationQuotaToOrganizationsRequestDataInner)`
 
 SetOrganizations sets Organizations field to given value.
 
@@ -70,11 +70,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-### HasType
-
-`func (o *ServicePlanVisibilityApply) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

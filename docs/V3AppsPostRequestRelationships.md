@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Space** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
+**Space** | [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | 
 
 ## Methods
 
 ### NewV3AppsPostRequestRelationships
 
-`func NewV3AppsPostRequestRelationships() *V3AppsPostRequestRelationships`
+`func NewV3AppsPostRequestRelationships(space V3AppsPostRequestRelationshipsSpace, ) *V3AppsPostRequestRelationships`
 
 NewV3AppsPostRequestRelationships instantiates a new V3AppsPostRequestRelationships object
 This constructor will assign default values to properties that have it defined,
@@ -44,11 +44,6 @@ and a boolean to check if the value has been set.
 
 SetSpace sets Space field to given value.
 
-### HasSpace
-
-`func (o *V3AppsPostRequestRelationships) HasSpace() bool`
-
-HasSpace returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

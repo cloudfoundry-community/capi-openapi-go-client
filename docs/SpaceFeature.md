@@ -4,15 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Description** | Pointer to **string** |  | [optional] 
-**Enabled** | Pointer to **bool** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
+**Description** | **string** | Human-readable description of the feature | 
+**Enabled** | **bool** | Whether the feature is enabled for this space | 
+**Metadata** | Pointer to [**SpaceFeatureMetadata**](SpaceFeatureMetadata.md) |  | [optional] 
+**Name** | **string** | The feature identifier | 
 
 ## Methods
 
 ### NewSpaceFeature
 
-`func NewSpaceFeature() *SpaceFeature`
+`func NewSpaceFeature(description string, enabled bool, name string, ) *SpaceFeature`
 
 NewSpaceFeature instantiates a new SpaceFeature object
 This constructor will assign default values to properties that have it defined,
@@ -46,11 +47,6 @@ and a boolean to check if the value has been set.
 
 SetDescription sets Description field to given value.
 
-### HasDescription
-
-`func (o *SpaceFeature) HasDescription() bool`
-
-HasDescription returns a boolean if a field has been set.
 
 ### GetEnabled
 
@@ -71,11 +67,31 @@ and a boolean to check if the value has been set.
 
 SetEnabled sets Enabled field to given value.
 
-### HasEnabled
 
-`func (o *SpaceFeature) HasEnabled() bool`
+### GetMetadata
 
-HasEnabled returns a boolean if a field has been set.
+`func (o *SpaceFeature) GetMetadata() SpaceFeatureMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *SpaceFeature) GetMetadataOk() (*SpaceFeatureMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *SpaceFeature) SetMetadata(v SpaceFeatureMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *SpaceFeature) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -96,11 +112,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *SpaceFeature) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

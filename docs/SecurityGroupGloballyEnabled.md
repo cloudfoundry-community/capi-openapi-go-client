@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Running** | Pointer to **bool** |  | [optional] 
-**Staging** | Pointer to **bool** |  | [optional] 
+**Running** | **bool** | Applied globally to all running apps | 
+**Staging** | **bool** | Applied globally during app staging | 
 
 ## Methods
 
 ### NewSecurityGroupGloballyEnabled
 
-`func NewSecurityGroupGloballyEnabled() *SecurityGroupGloballyEnabled`
+`func NewSecurityGroupGloballyEnabled(running bool, staging bool, ) *SecurityGroupGloballyEnabled`
 
 NewSecurityGroupGloballyEnabled instantiates a new SecurityGroupGloballyEnabled object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetRunning sets Running field to given value.
 
-### HasRunning
-
-`func (o *SecurityGroupGloballyEnabled) HasRunning() bool`
-
-HasRunning returns a boolean if a field has been set.
 
 ### GetStaging
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetStaging sets Staging field to given value.
 
-### HasStaging
-
-`func (o *SecurityGroupGloballyEnabled) HasStaging() bool`
-
-HasStaging returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

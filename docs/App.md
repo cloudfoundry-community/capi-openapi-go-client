@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | **time.Time** | The time with zone when the object was created | 
+**CreatedAt** | **time.Time** | When the app was created | 
 **Guid** | **string** | Unique identifier for the app | 
 **Lifecycle** | [**AppLifecycle**](AppLifecycle.md) |  | 
 **Links** | [**AppLinks**](AppLinks.md) |  | 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **Name** | **string** | Name of the app | 
 **Relationships** | [**AppRelationships**](AppRelationships.md) |  | 
 **State** | **string** | Current desired state of the app | 
-**UpdatedAt** | **time.Time** | The time with zone when the object was last updated | 
+**UpdatedAt** | **time.Time** | When the app was last updated | 
 
 ## Methods
 

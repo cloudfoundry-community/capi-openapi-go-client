@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Command** | Pointer to **string** |  | [optional] 
+**Command** | Pointer to **NullableString** |  | [optional] 
 
 ## Methods
 
@@ -50,6 +50,16 @@ SetCommand sets Command field to given value.
 
 HasCommand returns a boolean if a field has been set.
 
+### SetCommandNil
+
+`func (o *RevisionProcessesValue) SetCommandNil(b bool)`
+
+ SetCommandNil sets the value for Command to be an explicit nil
+
+### UnsetCommand
+`func (o *RevisionProcessesValue) UnsetCommand()`
+
+UnsetCommand ensures that no value is present for Command, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

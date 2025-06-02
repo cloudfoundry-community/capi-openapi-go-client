@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**App** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**Details** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**Parameters** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**Self** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
-**ServiceInstance** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated**](V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated.md) |  | [optional] 
+**App** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**Details** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**Parameters** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**Self** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
+**ServiceInstance** | Pointer to [**V3AppsGuidActionsApplyManifestPost202ResponseLinksJob**](V3AppsGuidActionsApplyManifestPost202ResponseLinksJob.md) |  | [optional] 
 
 ## Methods
 
@@ -31,20 +31,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetApp
 
-`func (o *ServiceCredentialBindingLinks) GetApp() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *ServiceCredentialBindingLinks) GetApp() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetApp returns the App field if non-nil, zero value otherwise.
 
 ### GetAppOk
 
-`func (o *ServiceCredentialBindingLinks) GetAppOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *ServiceCredentialBindingLinks) GetAppOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetAppOk returns a tuple with the App field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetApp
 
-`func (o *ServiceCredentialBindingLinks) SetApp(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *ServiceCredentialBindingLinks) SetApp(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetApp sets App field to given value.
 
@@ -56,20 +56,20 @@ HasApp returns a boolean if a field has been set.
 
 ### GetDetails
 
-`func (o *ServiceCredentialBindingLinks) GetDetails() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *ServiceCredentialBindingLinks) GetDetails() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetDetails returns the Details field if non-nil, zero value otherwise.
 
 ### GetDetailsOk
 
-`func (o *ServiceCredentialBindingLinks) GetDetailsOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *ServiceCredentialBindingLinks) GetDetailsOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetDetailsOk returns a tuple with the Details field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDetails
 
-`func (o *ServiceCredentialBindingLinks) SetDetails(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *ServiceCredentialBindingLinks) SetDetails(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetDetails sets Details field to given value.
 
@@ -81,20 +81,20 @@ HasDetails returns a boolean if a field has been set.
 
 ### GetParameters
 
-`func (o *ServiceCredentialBindingLinks) GetParameters() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *ServiceCredentialBindingLinks) GetParameters() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetParameters returns the Parameters field if non-nil, zero value otherwise.
 
 ### GetParametersOk
 
-`func (o *ServiceCredentialBindingLinks) GetParametersOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *ServiceCredentialBindingLinks) GetParametersOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetParametersOk returns a tuple with the Parameters field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParameters
 
-`func (o *ServiceCredentialBindingLinks) SetParameters(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *ServiceCredentialBindingLinks) SetParameters(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetParameters sets Parameters field to given value.
 
@@ -106,20 +106,20 @@ HasParameters returns a boolean if a field has been set.
 
 ### GetSelf
 
-`func (o *ServiceCredentialBindingLinks) GetSelf() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *ServiceCredentialBindingLinks) GetSelf() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetSelf returns the Self field if non-nil, zero value otherwise.
 
 ### GetSelfOk
 
-`func (o *ServiceCredentialBindingLinks) GetSelfOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *ServiceCredentialBindingLinks) GetSelfOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSelf
 
-`func (o *ServiceCredentialBindingLinks) SetSelf(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *ServiceCredentialBindingLinks) SetSelf(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetSelf sets Self field to given value.
 
@@ -131,20 +131,20 @@ HasSelf returns a boolean if a field has been set.
 
 ### GetServiceInstance
 
-`func (o *ServiceCredentialBindingLinks) GetServiceInstance() V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated`
+`func (o *ServiceCredentialBindingLinks) GetServiceInstance() V3AppsGuidActionsApplyManifestPost202ResponseLinksJob`
 
 GetServiceInstance returns the ServiceInstance field if non-nil, zero value otherwise.
 
 ### GetServiceInstanceOk
 
-`func (o *ServiceCredentialBindingLinks) GetServiceInstanceOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated, bool)`
+`func (o *ServiceCredentialBindingLinks) GetServiceInstanceOk() (*V3AppsGuidActionsApplyManifestPost202ResponseLinksJob, bool)`
 
 GetServiceInstanceOk returns a tuple with the ServiceInstance field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetServiceInstance
 
-`func (o *ServiceCredentialBindingLinks) SetServiceInstance(v V3IsolationSegmentsGuidRelationshipsOrganizationsGet200ResponseLinksRelated)`
+`func (o *ServiceCredentialBindingLinks) SetServiceInstance(v V3AppsGuidActionsApplyManifestPost202ResponseLinksJob)`
 
 SetServiceInstance sets ServiceInstance field to given value.
 

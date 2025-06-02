@@ -4,21 +4,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Command** | Pointer to **string** |  | [optional] 
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**MemoryInMb** | Pointer to **int32** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Origin** | Pointer to **string** |  | [optional] 
-**ProcessTypes** | Pointer to **[]string** |  | [optional] 
-**Relationships** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseRelationships**](V3AppsGuidDropletsCurrentGet200ResponseRelationships.md) |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
+**Command** | **string** | Command to execute for the sidecar process | 
+**CreatedAt** | **time.Time** | Timestamp when the sidecar was created | 
+**Guid** | **string** | Unique identifier for the sidecar | 
+**Links** | [**SidecarLinks**](SidecarLinks.md) |  | 
+**MemoryInMb** | **int32** | Memory allocation for the sidecar in MB | 
+**Metadata** | Pointer to [**SidecarMetadata**](SidecarMetadata.md) |  | [optional] 
+**Name** | **string** | Human-readable name for the sidecar | 
+**Origin** | **string** | How the sidecar was created | 
+**ProcessTypes** | **[]string** | Process types this sidecar runs alongside | 
+**Relationships** | [**SidecarRelationships**](SidecarRelationships.md) |  | 
+**UpdatedAt** | **time.Time** | Timestamp when the sidecar was last updated | 
 
 ## Methods
 
 ### NewSidecar
 
-`func NewSidecar() *Sidecar`
+`func NewSidecar(command string, createdAt time.Time, guid string, links SidecarLinks, memoryInMb int32, name string, origin string, processTypes []string, relationships SidecarRelationships, updatedAt time.Time, ) *Sidecar`
 
 NewSidecar instantiates a new Sidecar object
 This constructor will assign default values to properties that have it defined,
@@ -52,11 +54,6 @@ and a boolean to check if the value has been set.
 
 SetCommand sets Command field to given value.
 
-### HasCommand
-
-`func (o *Sidecar) HasCommand() bool`
-
-HasCommand returns a boolean if a field has been set.
 
 ### GetCreatedAt
 
@@ -77,11 +74,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *Sidecar) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -102,11 +94,26 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
 
-`func (o *Sidecar) HasGuid() bool`
+### GetLinks
 
-HasGuid returns a boolean if a field has been set.
+`func (o *Sidecar) GetLinks() SidecarLinks`
+
+GetLinks returns the Links field if non-nil, zero value otherwise.
+
+### GetLinksOk
+
+`func (o *Sidecar) GetLinksOk() (*SidecarLinks, bool)`
+
+GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLinks
+
+`func (o *Sidecar) SetLinks(v SidecarLinks)`
+
+SetLinks sets Links field to given value.
+
 
 ### GetMemoryInMb
 
@@ -127,11 +134,31 @@ and a boolean to check if the value has been set.
 
 SetMemoryInMb sets MemoryInMb field to given value.
 
-### HasMemoryInMb
 
-`func (o *Sidecar) HasMemoryInMb() bool`
+### GetMetadata
 
-HasMemoryInMb returns a boolean if a field has been set.
+`func (o *Sidecar) GetMetadata() SidecarMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *Sidecar) GetMetadataOk() (*SidecarMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *Sidecar) SetMetadata(v SidecarMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *Sidecar) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -152,11 +179,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *Sidecar) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 ### GetOrigin
 
@@ -177,11 +199,6 @@ and a boolean to check if the value has been set.
 
 SetOrigin sets Origin field to given value.
 
-### HasOrigin
-
-`func (o *Sidecar) HasOrigin() bool`
-
-HasOrigin returns a boolean if a field has been set.
 
 ### GetProcessTypes
 
@@ -202,36 +219,26 @@ and a boolean to check if the value has been set.
 
 SetProcessTypes sets ProcessTypes field to given value.
 
-### HasProcessTypes
-
-`func (o *Sidecar) HasProcessTypes() bool`
-
-HasProcessTypes returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *Sidecar) GetRelationships() V3AppsGuidDropletsCurrentGet200ResponseRelationships`
+`func (o *Sidecar) GetRelationships() SidecarRelationships`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *Sidecar) GetRelationshipsOk() (*V3AppsGuidDropletsCurrentGet200ResponseRelationships, bool)`
+`func (o *Sidecar) GetRelationshipsOk() (*SidecarRelationships, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *Sidecar) SetRelationships(v V3AppsGuidDropletsCurrentGet200ResponseRelationships)`
+`func (o *Sidecar) SetRelationships(v SidecarRelationships)`
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *Sidecar) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -252,11 +259,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *Sidecar) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

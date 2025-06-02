@@ -4,19 +4,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Code** | Pointer to **NullableInt32** |  | [optional] 
-**Description** | Pointer to **NullableString** |  | [optional] 
-**Destination** | Pointer to **string** |  | [optional] 
-**Log** | Pointer to **NullableBool** |  | [optional] 
-**Ports** | Pointer to **NullableString** |  | [optional] 
-**Protocol** | Pointer to **string** |  | [optional] 
-**Type** | Pointer to **NullableInt32** |  | [optional] 
+**Code** | Pointer to **NullableInt32** | ICMP code (only for ICMP protocol) | [optional] 
+**Description** | Pointer to **NullableString** | Human-readable description of the rule | [optional] 
+**Destination** | **string** | Destination address or CIDR block | 
+**Log** | Pointer to **NullableBool** | Whether to log traffic matching this rule | [optional] [default to false]
+**Ports** | Pointer to **NullableString** | Port or port range (e.g., \&quot;80\&quot;, \&quot;8080-8082\&quot;) | [optional] 
+**Protocol** | **string** | Network protocol | 
+**Type** | Pointer to **NullableInt32** | ICMP type (only for ICMP protocol) | [optional] 
 
 ## Methods
 
 ### NewRule
 
-`func NewRule() *Rule`
+`func NewRule(destination string, protocol string, ) *Rule`
 
 NewRule instantiates a new Rule object
 This constructor will assign default values to properties that have it defined,
@@ -120,11 +120,6 @@ and a boolean to check if the value has been set.
 
 SetDestination sets Destination field to given value.
 
-### HasDestination
-
-`func (o *Rule) HasDestination() bool`
-
-HasDestination returns a boolean if a field has been set.
 
 ### GetLog
 
@@ -215,11 +210,6 @@ and a boolean to check if the value has been set.
 
 SetProtocol sets Protocol field to given value.
 
-### HasProtocol
-
-`func (o *Rule) HasProtocol() bool`
-
-HasProtocol returns a boolean if a field has been set.
 
 ### GetType
 

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | [optional] 
-**Links** | Pointer to [**map[string]Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
+**Data** | Pointer to [**NullableV3AppsGuidRelationshipsCurrentDropletGet200ResponseData**](V3AppsGuidRelationshipsCurrentDropletGet200ResponseData.md) |  | [optional] 
+**Links** | Pointer to [**V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks**](V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetData
 
-`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetData() V3AppsPostRequestRelationshipsSpaceData`
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetData() V3AppsGuidRelationshipsCurrentDropletGet200ResponseData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetDataOk() (*V3AppsPostRequestRelationshipsSpaceData, bool)`
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetDataOk() (*V3AppsGuidRelationshipsCurrentDropletGet200ResponseData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) SetData(v V3AppsPostRequestRelationshipsSpaceData)`
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) SetData(v V3AppsGuidRelationshipsCurrentDropletGet200ResponseData)`
 
 SetData sets Data field to given value.
 
@@ -51,22 +51,32 @@ SetData sets Data field to given value.
 
 HasData returns a boolean if a field has been set.
 
+### SetDataNil
+
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) SetDataNil(b bool)`
+
+ SetDataNil sets the value for Data to be an explicit nil
+
+### UnsetData
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) UnsetData()`
+
+UnsetData ensures that no value is present for Data, not even an explicit nil
 ### GetLinks
 
-`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetLinks() map[string]Get200ResponseLinksLogCache`
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetLinks() V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks`
 
 GetLinks returns the Links field if non-nil, zero value otherwise.
 
 ### GetLinksOk
 
-`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetLinksOk() (*map[string]Get200ResponseLinksLogCache, bool)`
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) GetLinksOk() (*V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks, bool)`
 
 GetLinksOk returns a tuple with the Links field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLinks
 
-`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) SetLinks(v map[string]Get200ResponseLinksLogCache)`
+`func (o *V3AppsGuidRelationshipsCurrentDropletGet200Response) SetLinks(v V3AppsGuidRelationshipsCurrentDropletGet200ResponseLinks)`
 
 SetLinks sets Links field to given value.
 

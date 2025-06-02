@@ -1,5 +1,5 @@
 /*
-Cloud Controller API
+Cloud Foundry API
 
 Testing DefaultAPIService
 
@@ -14,27 +14,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
 )
 
 func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-
-	t.Run("Test DefaultAPIService ApplyOrganizationQuotaToOrganizations", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var quotaGuid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.ApplyOrganizationQuotaToOrganizations(context.Background(), quotaGuid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
 
 	t.Run("Test DefaultAPIService AssignDefaultIsolationSegment", func(t *testing.T) {
 
@@ -62,18 +48,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService CreateOrganizationQuota", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.CreateOrganizationQuota(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService DeleteOrganization", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -81,20 +55,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.DeleteOrganization(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService DeleteOrganizationQuota", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.DeleteOrganizationQuota(context.Background(), guid).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -144,20 +104,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService GetOrganizationQuota", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.GetOrganizationQuota(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService GetUsageSummary", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -165,18 +111,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.GetUsageSummary(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService ListOrganizationQuotas", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.ListOrganizationQuotas(context.Background()).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -236,138 +170,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService UpdateOrganizationQuota", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.UpdateOrganizationQuota(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AdminActionsClearBuildpackCachePost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3AdminActionsClearBuildpackCachePost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidActionsClearBuildpackCachePost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3AppsGuidActionsClearBuildpackCachePost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidActionsRestartPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidActionsRestartPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidActionsStartPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidActionsStartPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidActionsStopPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidActionsStopPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidBuildsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3AppsGuidBuildsGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3AppsGuidDelete(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidDropletsCurrentGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidDropletsCurrentGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService V3AppsGuidDropletsGet", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -375,159 +177,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidDropletsGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidEnvGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidEnvGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidEnvironmentVariablesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidEnvironmentVariablesGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidEnvironmentVariablesPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidEnvironmentVariablesPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidFeaturesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3AppsGuidFeaturesGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidFeaturesNameGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-		var name string
-
-		httpRes, err := apiClient.DefaultAPI.V3AppsGuidFeaturesNameGet(context.Background(), guid, name).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidFeaturesNamePatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-		var name string
-
-		httpRes, err := apiClient.DefaultAPI.V3AppsGuidFeaturesNamePatch(context.Background(), guid, name).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidPermissionsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidPermissionsGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidProcessesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidProcessesGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidRelationshipsCurrentDropletGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidRelationshipsCurrentDropletGet(context.Background(), guid).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -563,62 +212,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService V3AppsGuidRoutesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidRoutesGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidSidecarsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidSidecarsGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidSidecarsPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidSidecarsPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3AppsGuidSshEnabledGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsGuidSshEnabledGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService V3AppsGuidTasksPost", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -633,162 +226,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService V3AppsPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3AppsPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildpacksGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildpacksGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildpacksGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildpacksGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildpacksGuidUploadPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildpacksGuidUploadPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildpacksPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildpacksPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildsGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildsGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildsGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3BuildsPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3BuildsPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3DeploymentsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3DeploymentsGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3DeploymentsGuidActionsCancelPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3DeploymentsGuidActionsCancelPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3DeploymentsGuidActionsContinuePost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3DeploymentsGuidActionsContinuePost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3DeploymentsGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3DeploymentsGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3DeploymentsPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		httpRes, err := apiClient.DefaultAPI.V3DeploymentsPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService V3DropletsGet", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -797,6 +234,19 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test DefaultAPIService V3DropletsGuidDelete", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var guid string
+
+		httpRes, err := apiClient.DefaultAPI.V3DropletsGuidDelete(context.Background(), guid).Execute()
+
+		require.Nil(t, err)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -815,79 +265,25 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
+	t.Run("Test DefaultAPIService V3DropletsGuidPatch", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var guid string
+
+		resp, httpRes, err := apiClient.DefaultAPI.V3DropletsGuidPatch(context.Background(), guid).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
 	t.Run("Test DefaultAPIService V3DropletsPost", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
 
 		resp, httpRes, err := apiClient.DefaultAPI.V3DropletsPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3EnvironmentVariableGroupsNameGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var name string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3EnvironmentVariableGroupsNameGet(context.Background(), name).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3EnvironmentVariableGroupsNamePatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var name string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3EnvironmentVariableGroupsNamePatch(context.Background(), name).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3FeatureFlagsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3FeatureFlagsGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3FeatureFlagsNameGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var name string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3FeatureFlagsNameGet(context.Background(), name).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3FeatureFlagsNamePatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var name string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3FeatureFlagsNamePatch(context.Background(), name).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -1052,32 +448,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService V3PackagesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3PackagesGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesGuidDelete(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService V3PackagesGuidDropletsGet", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -1085,142 +455,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesGuidDropletsGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3PackagesGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3PackagesGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3PackagesGuidUploadPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesGuidUploadPost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3PackagesPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3PackagesPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ProcessesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ProcessesGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ProcessesGuidActionsScalePost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ProcessesGuidActionsScalePost(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ProcessesGuidInstancesIndexDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-		var index int32
-
-		httpRes, err := apiClient.DefaultAPI.V3ProcessesGuidInstancesIndexDelete(context.Background(), guid, index).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ProcessesGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ProcessesGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ProcessesGuidSidecarsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ProcessesGuidSidecarsGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ProcessesGuidStatsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ProcessesGuidStatsGet(context.Background(), guid).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -1254,6 +488,20 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
+	t.Run("Test DefaultAPIService V3RevisionsGuidGet", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var guid string
+
+		resp, httpRes, err := apiClient.DefaultAPI.V3RevisionsGuidGet(context.Background(), guid).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
 	t.Run("Test DefaultAPIService V3RevisionsGuidPatch", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -1261,160 +509,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.V3RevisionsGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RolesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3RolesGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RolesGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3RolesGuidDelete(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RolesGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3RolesGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RolesPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3RolesPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RoutesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3RoutesGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RoutesGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3RoutesGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3RoutesPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3RoutesPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SecurityGroupsGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SecurityGroupsGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SecurityGroupsGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3SecurityGroupsGuidDelete(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SecurityGroupsGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SecurityGroupsGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SecurityGroupsGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SecurityGroupsGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SecurityGroupsPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SecurityGroupsPost(context.Background()).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -1430,6 +524,19 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test DefaultAPIService V3ServiceBrokersGuidCatalogPost", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var guid string
+
+		httpRes, err := apiClient.DefaultAPI.V3ServiceBrokersGuidCatalogPost(context.Background(), guid).Execute()
+
+		require.Nil(t, err)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -1454,6 +561,20 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.V3ServiceBrokersGuidGet(context.Background(), guid).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test DefaultAPIService V3ServiceBrokersGuidJobsSynchronizationGet", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var guid string
+
+		resp, httpRes, err := apiClient.DefaultAPI.V3ServiceBrokersGuidJobsSynchronizationGet(context.Background(), guid).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -1594,6 +715,19 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
+	t.Run("Test DefaultAPIService V3ServiceInstancesGuidDelete", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var guid string
+
+		httpRes, err := apiClient.DefaultAPI.V3ServiceInstancesGuidDelete(context.Background(), guid).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
 	t.Run("Test DefaultAPIService V3ServiceInstancesGuidPatch", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -1632,20 +766,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		httpRes, err := apiClient.DefaultAPI.V3ServiceInstancesGuidRelationshipsSharedSpacesSpaceGuidDelete(context.Background(), guid, spaceGuid).Execute()
 
 		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ServiceInstancesGuidRelationshipsSharedSpacesUsageSummaryGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ServiceInstancesGuidRelationshipsSharedSpacesUsageSummaryGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})
@@ -1761,62 +881,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		var guid string
 
 		resp, httpRes, err := apiClient.DefaultAPI.V3ServicePlansGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ServicePlansGuidVisibilityGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ServicePlansGuidVisibilityGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ServicePlansGuidVisibilityOrganizationGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-		var organizationGuid string
-
-		httpRes, err := apiClient.DefaultAPI.V3ServicePlansGuidVisibilityOrganizationGuidDelete(context.Background(), guid, organizationGuid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ServicePlansGuidVisibilityPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ServicePlansGuidVisibilityPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3ServicePlansGuidVisibilityPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3ServicePlansGuidVisibilityPost(context.Background(), guid).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -1952,140 +1016,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test DefaultAPIService V3SidecarsGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3SidecarsGuidDelete(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SidecarsGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SidecarsGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SidecarsGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SidecarsGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasGet(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasGuidDelete(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasGuidGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasGuidGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasGuidPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasGuidPatch(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasPost(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasQuotaGuidRelationshipsSpacesPost", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var quotaGuid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasQuotaGuidRelationshipsSpacesPost(context.Background(), quotaGuid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpaceQuotasQuotaGuidRelationshipsSpacesSpaceGuidDelete", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var quotaGuid string
-		var spaceGuid string
-
-		httpRes, err := apiClient.DefaultAPI.V3SpaceQuotasQuotaGuidRelationshipsSpacesSpaceGuidDelete(context.Background(), quotaGuid, spaceGuid).Execute()
-
-		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test DefaultAPIService V3SpacesGet", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -2107,50 +1037,6 @@ func Test_capiclient_DefaultAPIService(t *testing.T) {
 		httpRes, err := apiClient.DefaultAPI.V3SpacesGuidDelete(context.Background(), guid).Execute()
 
 		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpacesGuidFeaturesGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpacesGuidFeaturesGet(context.Background(), guid).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpacesGuidFeaturesNameGet", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-		var name string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpacesGuidFeaturesNameGet(context.Background(), guid, name).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test DefaultAPIService V3SpacesGuidFeaturesPatch", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var guid string
-		var name string
-
-		resp, httpRes, err := apiClient.DefaultAPI.V3SpacesGuidFeaturesPatch(context.Background(), guid, name).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

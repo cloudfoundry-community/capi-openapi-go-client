@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**App** | Pointer to [**PackageLinksApp**](PackageLinksApp.md) |  | [optional] 
-**Download** | Pointer to [**PackageLinksDownload**](PackageLinksDownload.md) |  | [optional] 
-**Self** | Pointer to [**PackageLinksSelf**](PackageLinksSelf.md) |  | [optional] 
-**Upload** | Pointer to [**PackageLinksUpload**](PackageLinksUpload.md) |  | [optional] 
+**App** | Pointer to [**Link**](Link.md) |  | [optional] 
+**Download** | Pointer to [**Link**](Link.md) |  | [optional] 
+**Self** | Pointer to [**Link**](Link.md) |  | [optional] 
+**Upload** | Pointer to [**Link**](Link.md) |  | [optional] 
 
 ## Methods
 
@@ -30,20 +30,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetApp
 
-`func (o *PackageLinks) GetApp() PackageLinksApp`
+`func (o *PackageLinks) GetApp() Link`
 
 GetApp returns the App field if non-nil, zero value otherwise.
 
 ### GetAppOk
 
-`func (o *PackageLinks) GetAppOk() (*PackageLinksApp, bool)`
+`func (o *PackageLinks) GetAppOk() (*Link, bool)`
 
 GetAppOk returns a tuple with the App field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetApp
 
-`func (o *PackageLinks) SetApp(v PackageLinksApp)`
+`func (o *PackageLinks) SetApp(v Link)`
 
 SetApp sets App field to given value.
 
@@ -55,20 +55,20 @@ HasApp returns a boolean if a field has been set.
 
 ### GetDownload
 
-`func (o *PackageLinks) GetDownload() PackageLinksDownload`
+`func (o *PackageLinks) GetDownload() Link`
 
 GetDownload returns the Download field if non-nil, zero value otherwise.
 
 ### GetDownloadOk
 
-`func (o *PackageLinks) GetDownloadOk() (*PackageLinksDownload, bool)`
+`func (o *PackageLinks) GetDownloadOk() (*Link, bool)`
 
 GetDownloadOk returns a tuple with the Download field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDownload
 
-`func (o *PackageLinks) SetDownload(v PackageLinksDownload)`
+`func (o *PackageLinks) SetDownload(v Link)`
 
 SetDownload sets Download field to given value.
 
@@ -80,20 +80,20 @@ HasDownload returns a boolean if a field has been set.
 
 ### GetSelf
 
-`func (o *PackageLinks) GetSelf() PackageLinksSelf`
+`func (o *PackageLinks) GetSelf() Link`
 
 GetSelf returns the Self field if non-nil, zero value otherwise.
 
 ### GetSelfOk
 
-`func (o *PackageLinks) GetSelfOk() (*PackageLinksSelf, bool)`
+`func (o *PackageLinks) GetSelfOk() (*Link, bool)`
 
 GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSelf
 
-`func (o *PackageLinks) SetSelf(v PackageLinksSelf)`
+`func (o *PackageLinks) SetSelf(v Link)`
 
 SetSelf sets Self field to given value.
 
@@ -105,20 +105,20 @@ HasSelf returns a boolean if a field has been set.
 
 ### GetUpload
 
-`func (o *PackageLinks) GetUpload() PackageLinksUpload`
+`func (o *PackageLinks) GetUpload() Link`
 
 GetUpload returns the Upload field if non-nil, zero value otherwise.
 
 ### GetUploadOk
 
-`func (o *PackageLinks) GetUploadOk() (*PackageLinksUpload, bool)`
+`func (o *PackageLinks) GetUploadOk() (*Link, bool)`
 
 GetUploadOk returns a tuple with the Upload field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUpload
 
-`func (o *PackageLinks) SetUpload(v PackageLinksUpload)`
+`func (o *PackageLinks) SetUpload(v Link)`
 
 SetUpload sets Upload field to given value.
 

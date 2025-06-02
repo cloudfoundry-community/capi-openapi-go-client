@@ -4,21 +4,22 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Apps** | Pointer to [**V3SpaceQuotasPostRequestApps**](V3SpaceQuotasPostRequestApps.md) |  | [optional] 
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**Links** | Pointer to [**SpaceQuotaLinks**](SpaceQuotaLinks.md) |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Relationships** | Pointer to [**SpaceQuotaRelationships**](SpaceQuotaRelationships.md) |  | [optional] 
-**Routes** | Pointer to [**V3SpaceQuotasPostRequestRoutes**](V3SpaceQuotasPostRequestRoutes.md) |  | [optional] 
-**Services** | Pointer to [**V3SpaceQuotasPostRequestServices**](V3SpaceQuotasPostRequestServices.md) |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
+**Apps** | [**SpaceQuotaApps**](SpaceQuotaApps.md) |  | 
+**CreatedAt** | **time.Time** | Timestamp when the space quota was created | 
+**Guid** | **string** | Unique identifier for the space quota | 
+**Links** | [**SpaceQuotaLinks**](SpaceQuotaLinks.md) |  | 
+**Metadata** | Pointer to [**SpaceQuotaMetadata**](SpaceQuotaMetadata.md) |  | [optional] 
+**Name** | **string** | Human-readable name for the space quota | 
+**Relationships** | [**SpaceQuotaRelationships**](SpaceQuotaRelationships.md) |  | 
+**Routes** | [**SpaceQuotaRoutes**](SpaceQuotaRoutes.md) |  | 
+**Services** | [**SpaceQuotaServices**](SpaceQuotaServices.md) |  | 
+**UpdatedAt** | **time.Time** | Timestamp when the space quota was last updated | 
 
 ## Methods
 
 ### NewSpaceQuota
 
-`func NewSpaceQuota() *SpaceQuota`
+`func NewSpaceQuota(apps SpaceQuotaApps, createdAt time.Time, guid string, links SpaceQuotaLinks, name string, relationships SpaceQuotaRelationships, routes SpaceQuotaRoutes, services SpaceQuotaServices, updatedAt time.Time, ) *SpaceQuota`
 
 NewSpaceQuota instantiates a new SpaceQuota object
 This constructor will assign default values to properties that have it defined,
@@ -35,28 +36,23 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetApps
 
-`func (o *SpaceQuota) GetApps() V3SpaceQuotasPostRequestApps`
+`func (o *SpaceQuota) GetApps() SpaceQuotaApps`
 
 GetApps returns the Apps field if non-nil, zero value otherwise.
 
 ### GetAppsOk
 
-`func (o *SpaceQuota) GetAppsOk() (*V3SpaceQuotasPostRequestApps, bool)`
+`func (o *SpaceQuota) GetAppsOk() (*SpaceQuotaApps, bool)`
 
 GetAppsOk returns a tuple with the Apps field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetApps
 
-`func (o *SpaceQuota) SetApps(v V3SpaceQuotasPostRequestApps)`
+`func (o *SpaceQuota) SetApps(v SpaceQuotaApps)`
 
 SetApps sets Apps field to given value.
 
-### HasApps
-
-`func (o *SpaceQuota) HasApps() bool`
-
-HasApps returns a boolean if a field has been set.
 
 ### GetCreatedAt
 
@@ -77,11 +73,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *SpaceQuota) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -102,11 +93,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *SpaceQuota) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetLinks
 
@@ -127,11 +113,31 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
 
-`func (o *SpaceQuota) HasLinks() bool`
+### GetMetadata
 
-HasLinks returns a boolean if a field has been set.
+`func (o *SpaceQuota) GetMetadata() SpaceQuotaMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *SpaceQuota) GetMetadataOk() (*SpaceQuotaMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *SpaceQuota) SetMetadata(v SpaceQuotaMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *SpaceQuota) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
 
 ### GetName
 
@@ -152,11 +158,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-### HasName
-
-`func (o *SpaceQuota) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 ### GetRelationships
 
@@ -177,61 +178,46 @@ and a boolean to check if the value has been set.
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *SpaceQuota) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetRoutes
 
-`func (o *SpaceQuota) GetRoutes() V3SpaceQuotasPostRequestRoutes`
+`func (o *SpaceQuota) GetRoutes() SpaceQuotaRoutes`
 
 GetRoutes returns the Routes field if non-nil, zero value otherwise.
 
 ### GetRoutesOk
 
-`func (o *SpaceQuota) GetRoutesOk() (*V3SpaceQuotasPostRequestRoutes, bool)`
+`func (o *SpaceQuota) GetRoutesOk() (*SpaceQuotaRoutes, bool)`
 
 GetRoutesOk returns a tuple with the Routes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRoutes
 
-`func (o *SpaceQuota) SetRoutes(v V3SpaceQuotasPostRequestRoutes)`
+`func (o *SpaceQuota) SetRoutes(v SpaceQuotaRoutes)`
 
 SetRoutes sets Routes field to given value.
 
-### HasRoutes
-
-`func (o *SpaceQuota) HasRoutes() bool`
-
-HasRoutes returns a boolean if a field has been set.
 
 ### GetServices
 
-`func (o *SpaceQuota) GetServices() V3SpaceQuotasPostRequestServices`
+`func (o *SpaceQuota) GetServices() SpaceQuotaServices`
 
 GetServices returns the Services field if non-nil, zero value otherwise.
 
 ### GetServicesOk
 
-`func (o *SpaceQuota) GetServicesOk() (*V3SpaceQuotasPostRequestServices, bool)`
+`func (o *SpaceQuota) GetServicesOk() (*SpaceQuotaServices, bool)`
 
 GetServicesOk returns a tuple with the Services field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetServices
 
-`func (o *SpaceQuota) SetServices(v V3SpaceQuotasPostRequestServices)`
+`func (o *SpaceQuota) SetServices(v SpaceQuotaServices)`
 
 SetServices sets Services field to given value.
 
-### HasServices
-
-`func (o *SpaceQuota) HasServices() bool`
-
-HasServices returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -252,11 +238,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *SpaceQuota) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

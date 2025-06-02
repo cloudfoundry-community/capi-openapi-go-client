@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ServiceBroker** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
+**ServiceBroker** | Pointer to [**AssignDefaultIsolationSegmentRequest**](AssignDefaultIsolationSegmentRequest.md) |  | [optional] 
 
 ## Methods
 
@@ -27,20 +27,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetServiceBroker
 
-`func (o *ServiceOfferingRelationships) GetServiceBroker() V3AppsPostRequestRelationshipsSpace`
+`func (o *ServiceOfferingRelationships) GetServiceBroker() AssignDefaultIsolationSegmentRequest`
 
 GetServiceBroker returns the ServiceBroker field if non-nil, zero value otherwise.
 
 ### GetServiceBrokerOk
 
-`func (o *ServiceOfferingRelationships) GetServiceBrokerOk() (*V3AppsPostRequestRelationshipsSpace, bool)`
+`func (o *ServiceOfferingRelationships) GetServiceBrokerOk() (*AssignDefaultIsolationSegmentRequest, bool)`
 
 GetServiceBrokerOk returns a tuple with the ServiceBroker field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetServiceBroker
 
-`func (o *ServiceOfferingRelationships) SetServiceBroker(v V3AppsPostRequestRelationshipsSpace)`
+`func (o *ServiceOfferingRelationships) SetServiceBroker(v AssignDefaultIsolationSegmentRequest)`
 
 SetServiceBroker sets ServiceBroker field to given value.
 

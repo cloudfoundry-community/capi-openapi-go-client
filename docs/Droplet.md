@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Image** | Pointer to **string** |  | [optional] 
 **Lifecycle** | Pointer to [**DropletLifecycle**](DropletLifecycle.md) |  | [optional] 
 **Links** | Pointer to [**DropletLinks**](DropletLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **ProcessTypes** | Pointer to **map[string]string** |  | [optional] 
 **Relationships** | Pointer to [**V3DropletsPostRequestRelationships**](V3DropletsPostRequestRelationships.md) |  | [optional] 
 **Stack** | Pointer to **string** |  | [optional] 
@@ -266,20 +266,20 @@ HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *Droplet) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *Droplet) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *Droplet) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *Droplet) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *Droplet) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *Droplet) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 

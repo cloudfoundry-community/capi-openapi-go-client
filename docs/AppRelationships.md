@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CurrentDroplet** | Pointer to [**V3DropletsPostRequestRelationshipsApp**](V3DropletsPostRequestRelationshipsApp.md) |  | [optional] 
+**CurrentDroplet** | Pointer to [**NullableAppRelationshipsCurrentDroplet**](AppRelationshipsCurrentDroplet.md) |  | [optional] 
 **Space** | [**V3DropletsPostRequestRelationshipsApp**](V3DropletsPostRequestRelationshipsApp.md) |  | 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetCurrentDroplet
 
-`func (o *AppRelationships) GetCurrentDroplet() V3DropletsPostRequestRelationshipsApp`
+`func (o *AppRelationships) GetCurrentDroplet() AppRelationshipsCurrentDroplet`
 
 GetCurrentDroplet returns the CurrentDroplet field if non-nil, zero value otherwise.
 
 ### GetCurrentDropletOk
 
-`func (o *AppRelationships) GetCurrentDropletOk() (*V3DropletsPostRequestRelationshipsApp, bool)`
+`func (o *AppRelationships) GetCurrentDropletOk() (*AppRelationshipsCurrentDroplet, bool)`
 
 GetCurrentDropletOk returns a tuple with the CurrentDroplet field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCurrentDroplet
 
-`func (o *AppRelationships) SetCurrentDroplet(v V3DropletsPostRequestRelationshipsApp)`
+`func (o *AppRelationships) SetCurrentDroplet(v AppRelationshipsCurrentDroplet)`
 
 SetCurrentDroplet sets CurrentDroplet field to given value.
 
@@ -51,6 +51,16 @@ SetCurrentDroplet sets CurrentDroplet field to given value.
 
 HasCurrentDroplet returns a boolean if a field has been set.
 
+### SetCurrentDropletNil
+
+`func (o *AppRelationships) SetCurrentDropletNil(b bool)`
+
+ SetCurrentDropletNil sets the value for CurrentDroplet to be an explicit nil
+
+### UnsetCurrentDroplet
+`func (o *AppRelationships) UnsetCurrentDroplet()`
+
+UnsetCurrentDroplet ensures that no value is present for CurrentDroplet, not even an explicit nil
 ### GetSpace
 
 `func (o *AppRelationships) GetSpace() V3DropletsPostRequestRelationshipsApp`

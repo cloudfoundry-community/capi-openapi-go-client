@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Annotations** | Pointer to **map[string]interface{}** | Annotations applied to the app | [optional] 
-**Labels** | Pointer to **map[string]interface{}** | Labels applied to the app | [optional] 
+**Annotations** | Pointer to **map[string]string** |  | [optional] 
+**Labels** | Pointer to **map[string]string** |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetAnnotations
 
-`func (o *V3AppsGuidPatchRequestMetadata) GetAnnotations() map[string]interface{}`
+`func (o *V3AppsGuidPatchRequestMetadata) GetAnnotations() map[string]string`
 
 GetAnnotations returns the Annotations field if non-nil, zero value otherwise.
 
 ### GetAnnotationsOk
 
-`func (o *V3AppsGuidPatchRequestMetadata) GetAnnotationsOk() (*map[string]interface{}, bool)`
+`func (o *V3AppsGuidPatchRequestMetadata) GetAnnotationsOk() (*map[string]string, bool)`
 
 GetAnnotationsOk returns a tuple with the Annotations field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAnnotations
 
-`func (o *V3AppsGuidPatchRequestMetadata) SetAnnotations(v map[string]interface{})`
+`func (o *V3AppsGuidPatchRequestMetadata) SetAnnotations(v map[string]string)`
 
 SetAnnotations sets Annotations field to given value.
 
@@ -53,20 +53,20 @@ HasAnnotations returns a boolean if a field has been set.
 
 ### GetLabels
 
-`func (o *V3AppsGuidPatchRequestMetadata) GetLabels() map[string]interface{}`
+`func (o *V3AppsGuidPatchRequestMetadata) GetLabels() map[string]string`
 
 GetLabels returns the Labels field if non-nil, zero value otherwise.
 
 ### GetLabelsOk
 
-`func (o *V3AppsGuidPatchRequestMetadata) GetLabelsOk() (*map[string]interface{}, bool)`
+`func (o *V3AppsGuidPatchRequestMetadata) GetLabelsOk() (*map[string]string, bool)`
 
 GetLabelsOk returns a tuple with the Labels field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLabels
 
-`func (o *V3AppsGuidPatchRequestMetadata) SetLabels(v map[string]interface{})`
+`func (o *V3AppsGuidPatchRequestMetadata) SetLabels(v map[string]string)`
 
 SetLabels sets Labels field to given value.
 

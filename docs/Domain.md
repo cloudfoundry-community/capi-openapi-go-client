@@ -8,10 +8,10 @@ Name | Type | Description | Notes
 **Guid** | Pointer to **string** |  | [optional] 
 **Internal** | Pointer to **bool** |  | [optional] 
 **Links** | Pointer to [**DomainLinks**](DomainLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Relationships** | Pointer to [**DomainRelationships**](DomainRelationships.md) |  | [optional] 
-**RouterGroup** | Pointer to [**V3DropletsPostRequestRelationshipsAppData**](V3DropletsPostRequestRelationshipsAppData.md) |  | [optional] 
+**RouterGroup** | Pointer to [**V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData**](V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData.md) |  | [optional] 
 **SupportedProtocols** | Pointer to **[]string** |  | [optional] 
 **UpdatedAt** | Pointer to **time.Time** |  | [optional] 
 
@@ -136,20 +136,20 @@ HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *Domain) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *Domain) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *Domain) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *Domain) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *Domain) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *Domain) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
@@ -211,20 +211,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetRouterGroup
 
-`func (o *Domain) GetRouterGroup() V3DropletsPostRequestRelationshipsAppData`
+`func (o *Domain) GetRouterGroup() V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData`
 
 GetRouterGroup returns the RouterGroup field if non-nil, zero value otherwise.
 
 ### GetRouterGroupOk
 
-`func (o *Domain) GetRouterGroupOk() (*V3DropletsPostRequestRelationshipsAppData, bool)`
+`func (o *Domain) GetRouterGroupOk() (*V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData, bool)`
 
 GetRouterGroupOk returns a tuple with the RouterGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRouterGroup
 
-`func (o *Domain) SetRouterGroup(v V3DropletsPostRequestRelationshipsAppData)`
+`func (o *Domain) SetRouterGroup(v V3AppsGuidRelationshipsCurrentDropletPatch200ResponseData)`
 
 SetRouterGroup sets RouterGroup field to given value.
 

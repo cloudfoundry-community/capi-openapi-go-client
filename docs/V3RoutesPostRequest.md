@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Host** | Pointer to **string** |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
-**Path** | Pointer to **string** |  | [optional] 
-**Port** | Pointer to **int32** |  | [optional] 
-**Relationships** | Pointer to [**V3RoutesPostRequestRelationships**](V3RoutesPostRequestRelationships.md) |  | [optional] 
+**Host** | Pointer to **string** | Hostname for the route | [optional] 
+**Metadata** | Pointer to [**V3AppsGuidPatchRequestMetadata**](V3AppsGuidPatchRequestMetadata.md) |  | [optional] 
+**Path** | Pointer to **string** | Path for the route | [optional] 
+**Port** | Pointer to **int32** | Port for TCP route | [optional] 
+**Relationships** | [**V3RoutesPostRequestRelationships**](V3RoutesPostRequestRelationships.md) |  | 
 
 ## Methods
 
 ### NewV3RoutesPostRequest
 
-`func NewV3RoutesPostRequest() *V3RoutesPostRequest`
+`func NewV3RoutesPostRequest(relationships V3RoutesPostRequestRelationships, ) *V3RoutesPostRequest`
 
 NewV3RoutesPostRequest instantiates a new V3RoutesPostRequest object
 This constructor will assign default values to properties that have it defined,
@@ -56,20 +56,20 @@ HasHost returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *V3RoutesPostRequest) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *V3RoutesPostRequest) GetMetadata() V3AppsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *V3RoutesPostRequest) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *V3RoutesPostRequest) GetMetadataOk() (*V3AppsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *V3RoutesPostRequest) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *V3RoutesPostRequest) SetMetadata(v V3AppsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
@@ -148,11 +148,6 @@ and a boolean to check if the value has been set.
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *V3RoutesPostRequest) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -5,8 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **GloballyEnabled** | Pointer to [**SecurityGroupUpdateGloballyEnabled**](SecurityGroupUpdateGloballyEnabled.md) |  | [optional] 
-**Name** | Pointer to **NullableString** |  | [optional] 
-**Rules** | Pointer to [**[]Rule**](Rule.md) |  | [optional] 
+**Metadata** | Pointer to [**SecurityGroupCreateMetadata**](SecurityGroupCreateMetadata.md) |  | [optional] 
+**Name** | Pointer to **string** | Human-readable name for the security group | [optional] 
+**Rules** | Pointer to [**[]Rule**](Rule.md) | Array of egress traffic rules (replaces all existing rules) | [optional] 
 
 ## Methods
 
@@ -52,6 +53,31 @@ SetGloballyEnabled sets GloballyEnabled field to given value.
 
 HasGloballyEnabled returns a boolean if a field has been set.
 
+### GetMetadata
+
+`func (o *SecurityGroupUpdate) GetMetadata() SecurityGroupCreateMetadata`
+
+GetMetadata returns the Metadata field if non-nil, zero value otherwise.
+
+### GetMetadataOk
+
+`func (o *SecurityGroupUpdate) GetMetadataOk() (*SecurityGroupCreateMetadata, bool)`
+
+GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMetadata
+
+`func (o *SecurityGroupUpdate) SetMetadata(v SecurityGroupCreateMetadata)`
+
+SetMetadata sets Metadata field to given value.
+
+### HasMetadata
+
+`func (o *SecurityGroupUpdate) HasMetadata() bool`
+
+HasMetadata returns a boolean if a field has been set.
+
 ### GetName
 
 `func (o *SecurityGroupUpdate) GetName() string`
@@ -77,16 +103,6 @@ SetName sets Name field to given value.
 
 HasName returns a boolean if a field has been set.
 
-### SetNameNil
-
-`func (o *SecurityGroupUpdate) SetNameNil(b bool)`
-
- SetNameNil sets the value for Name to be an explicit nil
-
-### UnsetName
-`func (o *SecurityGroupUpdate) UnsetName()`
-
-UnsetName ensures that no value is present for Name, not even an explicit nil
 ### GetRules
 
 `func (o *SecurityGroupUpdate) GetRules() []Rule`
@@ -112,16 +128,6 @@ SetRules sets Rules field to given value.
 
 HasRules returns a boolean if a field has been set.
 
-### SetRulesNil
-
-`func (o *SecurityGroupUpdate) SetRulesNil(b bool)`
-
- SetRulesNil sets the value for Rules to be an explicit nil
-
-### UnsetRules
-`func (o *SecurityGroupUpdate) UnsetRules()`
-
-UnsetRules ensures that no value is present for Rules, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

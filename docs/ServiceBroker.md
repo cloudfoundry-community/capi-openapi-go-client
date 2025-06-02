@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **CreatedAt** | Pointer to **time.Time** |  | [optional] 
 **Guid** | Pointer to **string** |  | [optional] 
 **Links** | Pointer to [**ServiceBrokerLinks**](ServiceBrokerLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**Metadata**](Metadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Relationships** | Pointer to [**ServiceBrokerRelationships**](ServiceBrokerRelationships.md) |  | [optional] 
+**Relationships** | Pointer to [**V3ServiceBrokersPostRequestRelationships**](V3ServiceBrokersPostRequestRelationships.md) |  | [optional] 
 **UpdatedAt** | Pointer to **time.Time** |  | [optional] 
 **Url** | Pointer to **string** |  | [optional] 
 
@@ -109,20 +109,20 @@ HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *ServiceBroker) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *ServiceBroker) GetMetadata() Metadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ServiceBroker) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *ServiceBroker) GetMetadataOk() (*Metadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ServiceBroker) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *ServiceBroker) SetMetadata(v Metadata)`
 
 SetMetadata sets Metadata field to given value.
 
@@ -159,20 +159,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *ServiceBroker) GetRelationships() ServiceBrokerRelationships`
+`func (o *ServiceBroker) GetRelationships() V3ServiceBrokersPostRequestRelationships`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *ServiceBroker) GetRelationshipsOk() (*ServiceBrokerRelationships, bool)`
+`func (o *ServiceBroker) GetRelationshipsOk() (*V3ServiceBrokersPostRequestRelationships, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *ServiceBroker) SetRelationships(v ServiceBrokerRelationships)`
+`func (o *ServiceBroker) SetRelationships(v V3ServiceBrokersPostRequestRelationships)`
 
 SetRelationships sets Relationships field to given value.
 

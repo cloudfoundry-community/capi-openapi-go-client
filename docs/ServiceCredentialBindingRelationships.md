@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**App** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
-**ServiceInstance** | Pointer to [**V3AppsPostRequestRelationshipsSpace**](V3AppsPostRequestRelationshipsSpace.md) |  | [optional] 
+**App** | Pointer to [**AssignDefaultIsolationSegmentRequest**](AssignDefaultIsolationSegmentRequest.md) |  | [optional] 
+**ServiceInstance** | Pointer to [**AssignDefaultIsolationSegmentRequest**](AssignDefaultIsolationSegmentRequest.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetApp
 
-`func (o *ServiceCredentialBindingRelationships) GetApp() V3AppsPostRequestRelationshipsSpace`
+`func (o *ServiceCredentialBindingRelationships) GetApp() AssignDefaultIsolationSegmentRequest`
 
 GetApp returns the App field if non-nil, zero value otherwise.
 
 ### GetAppOk
 
-`func (o *ServiceCredentialBindingRelationships) GetAppOk() (*V3AppsPostRequestRelationshipsSpace, bool)`
+`func (o *ServiceCredentialBindingRelationships) GetAppOk() (*AssignDefaultIsolationSegmentRequest, bool)`
 
 GetAppOk returns a tuple with the App field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetApp
 
-`func (o *ServiceCredentialBindingRelationships) SetApp(v V3AppsPostRequestRelationshipsSpace)`
+`func (o *ServiceCredentialBindingRelationships) SetApp(v AssignDefaultIsolationSegmentRequest)`
 
 SetApp sets App field to given value.
 
@@ -53,20 +53,20 @@ HasApp returns a boolean if a field has been set.
 
 ### GetServiceInstance
 
-`func (o *ServiceCredentialBindingRelationships) GetServiceInstance() V3AppsPostRequestRelationshipsSpace`
+`func (o *ServiceCredentialBindingRelationships) GetServiceInstance() AssignDefaultIsolationSegmentRequest`
 
 GetServiceInstance returns the ServiceInstance field if non-nil, zero value otherwise.
 
 ### GetServiceInstanceOk
 
-`func (o *ServiceCredentialBindingRelationships) GetServiceInstanceOk() (*V3AppsPostRequestRelationshipsSpace, bool)`
+`func (o *ServiceCredentialBindingRelationships) GetServiceInstanceOk() (*AssignDefaultIsolationSegmentRequest, bool)`
 
 GetServiceInstanceOk returns a tuple with the ServiceInstance field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetServiceInstance
 
-`func (o *ServiceCredentialBindingRelationships) SetServiceInstance(v V3AppsPostRequestRelationshipsSpace)`
+`func (o *ServiceCredentialBindingRelationships) SetServiceInstance(v AssignDefaultIsolationSegmentRequest)`
 
 SetServiceInstance sets ServiceInstance field to given value.
 

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ReadBasicData** | Pointer to **bool** |  | [optional] 
-**ReadSensitiveData** | Pointer to **bool** |  | [optional] 
+**Read** | Pointer to **bool** |  | [optional] 
+**Write** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -26,55 +26,55 @@ NewV3AppsGuidPermissionsGet200ResponseWithDefaults instantiates a new V3AppsGuid
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetReadBasicData
+### GetRead
 
-`func (o *V3AppsGuidPermissionsGet200Response) GetReadBasicData() bool`
+`func (o *V3AppsGuidPermissionsGet200Response) GetRead() bool`
 
-GetReadBasicData returns the ReadBasicData field if non-nil, zero value otherwise.
+GetRead returns the Read field if non-nil, zero value otherwise.
 
-### GetReadBasicDataOk
+### GetReadOk
 
-`func (o *V3AppsGuidPermissionsGet200Response) GetReadBasicDataOk() (*bool, bool)`
+`func (o *V3AppsGuidPermissionsGet200Response) GetReadOk() (*bool, bool)`
 
-GetReadBasicDataOk returns a tuple with the ReadBasicData field if it's non-nil, zero value otherwise
+GetReadOk returns a tuple with the Read field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetReadBasicData
+### SetRead
 
-`func (o *V3AppsGuidPermissionsGet200Response) SetReadBasicData(v bool)`
+`func (o *V3AppsGuidPermissionsGet200Response) SetRead(v bool)`
 
-SetReadBasicData sets ReadBasicData field to given value.
+SetRead sets Read field to given value.
 
-### HasReadBasicData
+### HasRead
 
-`func (o *V3AppsGuidPermissionsGet200Response) HasReadBasicData() bool`
+`func (o *V3AppsGuidPermissionsGet200Response) HasRead() bool`
 
-HasReadBasicData returns a boolean if a field has been set.
+HasRead returns a boolean if a field has been set.
 
-### GetReadSensitiveData
+### GetWrite
 
-`func (o *V3AppsGuidPermissionsGet200Response) GetReadSensitiveData() bool`
+`func (o *V3AppsGuidPermissionsGet200Response) GetWrite() bool`
 
-GetReadSensitiveData returns the ReadSensitiveData field if non-nil, zero value otherwise.
+GetWrite returns the Write field if non-nil, zero value otherwise.
 
-### GetReadSensitiveDataOk
+### GetWriteOk
 
-`func (o *V3AppsGuidPermissionsGet200Response) GetReadSensitiveDataOk() (*bool, bool)`
+`func (o *V3AppsGuidPermissionsGet200Response) GetWriteOk() (*bool, bool)`
 
-GetReadSensitiveDataOk returns a tuple with the ReadSensitiveData field if it's non-nil, zero value otherwise
+GetWriteOk returns a tuple with the Write field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetReadSensitiveData
+### SetWrite
 
-`func (o *V3AppsGuidPermissionsGet200Response) SetReadSensitiveData(v bool)`
+`func (o *V3AppsGuidPermissionsGet200Response) SetWrite(v bool)`
 
-SetReadSensitiveData sets ReadSensitiveData field to given value.
+SetWrite sets Write field to given value.
 
-### HasReadSensitiveData
+### HasWrite
 
-`func (o *V3AppsGuidPermissionsGet200Response) HasReadSensitiveData() bool`
+`func (o *V3AppsGuidPermissionsGet200Response) HasWrite() bool`
 
-HasReadSensitiveData returns a boolean if a field has been set.
+HasWrite returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

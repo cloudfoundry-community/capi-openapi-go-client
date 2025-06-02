@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**App** | Pointer to [**Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
+**App** | Pointer to [**Link**](Link.md) |  | [optional] 
 **EnvironmentVariables** | Pointer to [**Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
-**Self** | Pointer to [**Get200ResponseLinksLogCache**](Get200ResponseLinksLogCache.md) |  | [optional] 
+**Self** | Pointer to [**Link**](Link.md) |  | [optional] 
 
 ## Methods
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetApp
 
-`func (o *RevisionLinks) GetApp() Get200ResponseLinksLogCache`
+`func (o *RevisionLinks) GetApp() Link`
 
 GetApp returns the App field if non-nil, zero value otherwise.
 
 ### GetAppOk
 
-`func (o *RevisionLinks) GetAppOk() (*Get200ResponseLinksLogCache, bool)`
+`func (o *RevisionLinks) GetAppOk() (*Link, bool)`
 
 GetAppOk returns a tuple with the App field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetApp
 
-`func (o *RevisionLinks) SetApp(v Get200ResponseLinksLogCache)`
+`func (o *RevisionLinks) SetApp(v Link)`
 
 SetApp sets App field to given value.
 
@@ -79,20 +79,20 @@ HasEnvironmentVariables returns a boolean if a field has been set.
 
 ### GetSelf
 
-`func (o *RevisionLinks) GetSelf() Get200ResponseLinksLogCache`
+`func (o *RevisionLinks) GetSelf() Link`
 
 GetSelf returns the Self field if non-nil, zero value otherwise.
 
 ### GetSelfOk
 
-`func (o *RevisionLinks) GetSelfOk() (*Get200ResponseLinksLogCache, bool)`
+`func (o *RevisionLinks) GetSelfOk() (*Link, bool)`
 
 GetSelfOk returns a tuple with the Self field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSelf
 
-`func (o *RevisionLinks) SetSelf(v Get200ResponseLinksLogCache)`
+`func (o *RevisionLinks) SetSelf(v Link)`
 
 SetSelf sets Self field to given value.
 

@@ -4,24 +4,24 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | Pointer to **time.Time** |  | [optional] 
-**Destinations** | Pointer to [**[]Destination**](Destination.md) |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**Host** | Pointer to **NullableString** |  | [optional] 
-**Links** | Pointer to [**RouteLinks**](RouteLinks.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
-**Path** | Pointer to **NullableString** |  | [optional] 
-**Port** | Pointer to **NullableInt32** |  | [optional] 
-**Protocol** | Pointer to **string** |  | [optional] 
-**Relationships** | Pointer to [**V3RoutesPostRequestRelationships**](V3RoutesPostRequestRelationships.md) |  | [optional] 
-**UpdatedAt** | Pointer to **time.Time** |  | [optional] 
-**Url** | Pointer to **string** |  | [optional] 
+**CreatedAt** | **time.Time** |  | 
+**Destinations** | [**[]Destination**](Destination.md) | List of destinations mapped to this route | 
+**Guid** | **string** | Unique identifier for the route | 
+**Host** | **NullableString** | Hostname for the route | 
+**Links** | [**RouteLinks**](RouteLinks.md) |  | 
+**Metadata** | [**V3AppsGuidTasksPostRequestMetadata**](V3AppsGuidTasksPostRequestMetadata.md) |  | 
+**Path** | **string** | Path for the route | 
+**Port** | **NullableInt32** | Port for TCP routes | 
+**Protocol** | **string** | Protocol for the route | 
+**Relationships** | [**RouteRelationships**](RouteRelationships.md) |  | 
+**UpdatedAt** | **time.Time** |  | 
+**Url** | **string** | Full URL constructed from host, domain, path, and port | 
 
 ## Methods
 
 ### NewRoute
 
-`func NewRoute() *Route`
+`func NewRoute(createdAt time.Time, destinations []Destination, guid string, host NullableString, links RouteLinks, metadata V3AppsGuidTasksPostRequestMetadata, path string, port NullableInt32, protocol string, relationships RouteRelationships, updatedAt time.Time, url string, ) *Route`
 
 NewRoute instantiates a new Route object
 This constructor will assign default values to properties that have it defined,
@@ -55,11 +55,6 @@ and a boolean to check if the value has been set.
 
 SetCreatedAt sets CreatedAt field to given value.
 
-### HasCreatedAt
-
-`func (o *Route) HasCreatedAt() bool`
-
-HasCreatedAt returns a boolean if a field has been set.
 
 ### GetDestinations
 
@@ -80,11 +75,6 @@ and a boolean to check if the value has been set.
 
 SetDestinations sets Destinations field to given value.
 
-### HasDestinations
-
-`func (o *Route) HasDestinations() bool`
-
-HasDestinations returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -105,11 +95,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *Route) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetHost
 
@@ -130,11 +115,6 @@ and a boolean to check if the value has been set.
 
 SetHost sets Host field to given value.
 
-### HasHost
-
-`func (o *Route) HasHost() bool`
-
-HasHost returns a boolean if a field has been set.
 
 ### SetHostNil
 
@@ -165,36 +145,26 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
-
-`func (o *Route) HasLinks() bool`
-
-HasLinks returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *Route) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *Route) GetMetadata() V3AppsGuidTasksPostRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *Route) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *Route) GetMetadataOk() (*V3AppsGuidTasksPostRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *Route) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *Route) SetMetadata(v V3AppsGuidTasksPostRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
-### HasMetadata
-
-`func (o *Route) HasMetadata() bool`
-
-HasMetadata returns a boolean if a field has been set.
 
 ### GetPath
 
@@ -215,22 +185,7 @@ and a boolean to check if the value has been set.
 
 SetPath sets Path field to given value.
 
-### HasPath
 
-`func (o *Route) HasPath() bool`
-
-HasPath returns a boolean if a field has been set.
-
-### SetPathNil
-
-`func (o *Route) SetPathNil(b bool)`
-
- SetPathNil sets the value for Path to be an explicit nil
-
-### UnsetPath
-`func (o *Route) UnsetPath()`
-
-UnsetPath ensures that no value is present for Path, not even an explicit nil
 ### GetPort
 
 `func (o *Route) GetPort() int32`
@@ -250,11 +205,6 @@ and a boolean to check if the value has been set.
 
 SetPort sets Port field to given value.
 
-### HasPort
-
-`func (o *Route) HasPort() bool`
-
-HasPort returns a boolean if a field has been set.
 
 ### SetPortNil
 
@@ -285,36 +235,26 @@ and a boolean to check if the value has been set.
 
 SetProtocol sets Protocol field to given value.
 
-### HasProtocol
-
-`func (o *Route) HasProtocol() bool`
-
-HasProtocol returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *Route) GetRelationships() V3RoutesPostRequestRelationships`
+`func (o *Route) GetRelationships() RouteRelationships`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *Route) GetRelationshipsOk() (*V3RoutesPostRequestRelationships, bool)`
+`func (o *Route) GetRelationshipsOk() (*RouteRelationships, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *Route) SetRelationships(v V3RoutesPostRequestRelationships)`
+`func (o *Route) SetRelationships(v RouteRelationships)`
 
 SetRelationships sets Relationships field to given value.
 
-### HasRelationships
-
-`func (o *Route) HasRelationships() bool`
-
-HasRelationships returns a boolean if a field has been set.
 
 ### GetUpdatedAt
 
@@ -335,11 +275,6 @@ and a boolean to check if the value has been set.
 
 SetUpdatedAt sets UpdatedAt field to given value.
 
-### HasUpdatedAt
-
-`func (o *Route) HasUpdatedAt() bool`
-
-HasUpdatedAt returns a boolean if a field has been set.
 
 ### GetUrl
 
@@ -360,11 +295,6 @@ and a boolean to check if the value has been set.
 
 SetUrl sets Url field to given value.
 
-### HasUrl
-
-`func (o *Route) HasUrl() bool`
-
-HasUrl returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

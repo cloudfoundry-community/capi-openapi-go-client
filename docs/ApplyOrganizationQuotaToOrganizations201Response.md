@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to [**[]V3DropletsPostRequestRelationshipsAppData**](V3DropletsPostRequestRelationshipsAppData.md) |  | [optional] 
-**Links** | Pointer to [**ApplyOrganizationQuotaToOrganizations201ResponseLinks**](ApplyOrganizationQuotaToOrganizations201ResponseLinks.md) |  | [optional] 
+**Data** | [**[]V3AppsPostRequestRelationshipsSpaceData**](V3AppsPostRequestRelationshipsSpaceData.md) |  | 
+**Links** | [**ApplyOrganizationQuotaToOrganizations201ResponseLinks**](ApplyOrganizationQuotaToOrganizations201ResponseLinks.md) |  | 
 
 ## Methods
 
 ### NewApplyOrganizationQuotaToOrganizations201Response
 
-`func NewApplyOrganizationQuotaToOrganizations201Response() *ApplyOrganizationQuotaToOrganizations201Response`
+`func NewApplyOrganizationQuotaToOrganizations201Response(data []V3AppsPostRequestRelationshipsSpaceData, links ApplyOrganizationQuotaToOrganizations201ResponseLinks, ) *ApplyOrganizationQuotaToOrganizations201Response`
 
 NewApplyOrganizationQuotaToOrganizations201Response instantiates a new ApplyOrganizationQuotaToOrganizations201Response object
 This constructor will assign default values to properties that have it defined,
@@ -28,28 +28,23 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetData
 
-`func (o *ApplyOrganizationQuotaToOrganizations201Response) GetData() []V3DropletsPostRequestRelationshipsAppData`
+`func (o *ApplyOrganizationQuotaToOrganizations201Response) GetData() []V3AppsPostRequestRelationshipsSpaceData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *ApplyOrganizationQuotaToOrganizations201Response) GetDataOk() (*[]V3DropletsPostRequestRelationshipsAppData, bool)`
+`func (o *ApplyOrganizationQuotaToOrganizations201Response) GetDataOk() (*[]V3AppsPostRequestRelationshipsSpaceData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *ApplyOrganizationQuotaToOrganizations201Response) SetData(v []V3DropletsPostRequestRelationshipsAppData)`
+`func (o *ApplyOrganizationQuotaToOrganizations201Response) SetData(v []V3AppsPostRequestRelationshipsSpaceData)`
 
 SetData sets Data field to given value.
 
-### HasData
-
-`func (o *ApplyOrganizationQuotaToOrganizations201Response) HasData() bool`
-
-HasData returns a boolean if a field has been set.
 
 ### GetLinks
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetLinks sets Links field to given value.
 
-### HasLinks
-
-`func (o *ApplyOrganizationQuotaToOrganizations201Response) HasLinks() bool`
-
-HasLinks returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

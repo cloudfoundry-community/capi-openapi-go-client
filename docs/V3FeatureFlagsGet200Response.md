@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Pagination** | Pointer to [**Pagination**](Pagination.md) |  | [optional] 
-**Resources** | Pointer to [**[]FeatureFlag**](FeatureFlag.md) |  | [optional] 
+**Pagination** | [**Pagination**](Pagination.md) |  | 
+**Resources** | [**[]FeatureFlag**](FeatureFlag.md) |  | 
 
 ## Methods
 
 ### NewV3FeatureFlagsGet200Response
 
-`func NewV3FeatureFlagsGet200Response() *V3FeatureFlagsGet200Response`
+`func NewV3FeatureFlagsGet200Response(pagination Pagination, resources []FeatureFlag, ) *V3FeatureFlagsGet200Response`
 
 NewV3FeatureFlagsGet200Response instantiates a new V3FeatureFlagsGet200Response object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetPagination sets Pagination field to given value.
 
-### HasPagination
-
-`func (o *V3FeatureFlagsGet200Response) HasPagination() bool`
-
-HasPagination returns a boolean if a field has been set.
 
 ### GetResources
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetResources sets Resources field to given value.
 
-### HasResources
-
-`func (o *V3FeatureFlagsGet200Response) HasResources() bool`
-
-HasResources returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

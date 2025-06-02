@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **MemoryInMb** | Pointer to **int32** |  | [optional] 
 **Metadata** | Pointer to [**V3AppsGuidTasksPostRequestMetadata**](V3AppsGuidTasksPostRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Relationships** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseRelationships**](V3AppsGuidDropletsCurrentGet200ResponseRelationships.md) |  | [optional] 
+**Relationships** | Pointer to [**RevisionRelationships**](RevisionRelationships.md) |  | [optional] 
 **Result** | Pointer to [**TaskResult**](TaskResult.md) |  | [optional] 
 **SequenceId** | Pointer to **int32** |  | [optional] 
 **State** | Pointer to **string** |  | [optional] 
@@ -291,20 +291,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *Task) GetRelationships() V3AppsGuidDropletsCurrentGet200ResponseRelationships`
+`func (o *Task) GetRelationships() RevisionRelationships`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *Task) GetRelationshipsOk() (*V3AppsGuidDropletsCurrentGet200ResponseRelationships, bool)`
+`func (o *Task) GetRelationshipsOk() (*RevisionRelationships, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *Task) SetRelationships(v V3AppsGuidDropletsCurrentGet200ResponseRelationships)`
+`func (o *Task) SetRelationships(v RevisionRelationships)`
 
 SetRelationships sets Relationships field to given value.
 

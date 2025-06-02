@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**App** | Pointer to [**DestinationApp**](DestinationApp.md) |  | [optional] 
-**Guid** | Pointer to **string** |  | [optional] 
-**Port** | Pointer to **int32** |  | [optional] 
-**Protocol** | Pointer to **NullableString** |  | [optional] 
-**Weight** | Pointer to **NullableInt32** |  | [optional] 
+**App** | [**DestinationApp**](DestinationApp.md) |  | 
+**Guid** | **string** | Unique identifier for the destination | 
+**Port** | **NullableInt32** | Port on the app process | 
+**Protocol** | **NullableString** | Protocol for the destination | 
+**Weight** | **NullableInt32** | Percentage of traffic for weighted routing | 
 
 ## Methods
 
 ### NewDestination
 
-`func NewDestination() *Destination`
+`func NewDestination(app DestinationApp, guid string, port NullableInt32, protocol NullableString, weight NullableInt32, ) *Destination`
 
 NewDestination instantiates a new Destination object
 This constructor will assign default values to properties that have it defined,
@@ -48,11 +48,6 @@ and a boolean to check if the value has been set.
 
 SetApp sets App field to given value.
 
-### HasApp
-
-`func (o *Destination) HasApp() bool`
-
-HasApp returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -73,11 +68,6 @@ and a boolean to check if the value has been set.
 
 SetGuid sets Guid field to given value.
 
-### HasGuid
-
-`func (o *Destination) HasGuid() bool`
-
-HasGuid returns a boolean if a field has been set.
 
 ### GetPort
 
@@ -98,12 +88,17 @@ and a boolean to check if the value has been set.
 
 SetPort sets Port field to given value.
 
-### HasPort
 
-`func (o *Destination) HasPort() bool`
+### SetPortNil
 
-HasPort returns a boolean if a field has been set.
+`func (o *Destination) SetPortNil(b bool)`
 
+ SetPortNil sets the value for Port to be an explicit nil
+
+### UnsetPort
+`func (o *Destination) UnsetPort()`
+
+UnsetPort ensures that no value is present for Port, not even an explicit nil
 ### GetProtocol
 
 `func (o *Destination) GetProtocol() string`
@@ -123,11 +118,6 @@ and a boolean to check if the value has been set.
 
 SetProtocol sets Protocol field to given value.
 
-### HasProtocol
-
-`func (o *Destination) HasProtocol() bool`
-
-HasProtocol returns a boolean if a field has been set.
 
 ### SetProtocolNil
 
@@ -158,11 +148,6 @@ and a boolean to check if the value has been set.
 
 SetWeight sets Weight field to given value.
 
-### HasWeight
-
-`func (o *Destination) HasWeight() bool`
-
-HasWeight returns a boolean if a field has been set.
 
 ### SetWeightNil
 

@@ -4,9 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**EnvironmentVariables** | Pointer to **map[string]string** |  | [optional] 
 **Lifecycle** | Pointer to [**V3AppsGuidPatchRequestLifecycle**](V3AppsGuidPatchRequestLifecycle.md) |  | [optional] 
 **Metadata** | Pointer to [**V3AppsGuidPatchRequestMetadata**](V3AppsGuidPatchRequestMetadata.md) |  | [optional] 
-**Name** | Pointer to **string** | Name of the app | [optional] 
+**Name** | Pointer to **string** | New name for the app | [optional] 
+**State** | Pointer to **string** | Desired state of the app | [optional] 
 
 ## Methods
 
@@ -26,6 +28,31 @@ will change when the set of required properties is changed
 NewV3AppsGuidPatchRequestWithDefaults instantiates a new V3AppsGuidPatchRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetEnvironmentVariables
+
+`func (o *V3AppsGuidPatchRequest) GetEnvironmentVariables() map[string]string`
+
+GetEnvironmentVariables returns the EnvironmentVariables field if non-nil, zero value otherwise.
+
+### GetEnvironmentVariablesOk
+
+`func (o *V3AppsGuidPatchRequest) GetEnvironmentVariablesOk() (*map[string]string, bool)`
+
+GetEnvironmentVariablesOk returns a tuple with the EnvironmentVariables field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnvironmentVariables
+
+`func (o *V3AppsGuidPatchRequest) SetEnvironmentVariables(v map[string]string)`
+
+SetEnvironmentVariables sets EnvironmentVariables field to given value.
+
+### HasEnvironmentVariables
+
+`func (o *V3AppsGuidPatchRequest) HasEnvironmentVariables() bool`
+
+HasEnvironmentVariables returns a boolean if a field has been set.
 
 ### GetLifecycle
 
@@ -101,6 +128,31 @@ SetName sets Name field to given value.
 `func (o *V3AppsGuidPatchRequest) HasName() bool`
 
 HasName returns a boolean if a field has been set.
+
+### GetState
+
+`func (o *V3AppsGuidPatchRequest) GetState() string`
+
+GetState returns the State field if non-nil, zero value otherwise.
+
+### GetStateOk
+
+`func (o *V3AppsGuidPatchRequest) GetStateOk() (*string, bool)`
+
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetState
+
+`func (o *V3AppsGuidPatchRequest) SetState(v string)`
+
+SetState sets State field to given value.
+
+### HasState
+
+`func (o *V3AppsGuidPatchRequest) HasState() bool`
+
+HasState returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

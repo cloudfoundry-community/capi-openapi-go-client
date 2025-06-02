@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RunningSpaces** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest**](V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest.md) |  | [optional] 
-**StagingSpaces** | Pointer to [**V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest**](V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest.md) |  | [optional] 
+**RunningSpaces** | Pointer to [**SecurityGroupRelationshipsRunningSpaces**](SecurityGroupRelationshipsRunningSpaces.md) |  | [optional] 
+**StagingSpaces** | Pointer to [**SecurityGroupRelationshipsStagingSpaces**](SecurityGroupRelationshipsStagingSpaces.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetRunningSpaces
 
-`func (o *SecurityGroupRelationships) GetRunningSpaces() V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest`
+`func (o *SecurityGroupRelationships) GetRunningSpaces() SecurityGroupRelationshipsRunningSpaces`
 
 GetRunningSpaces returns the RunningSpaces field if non-nil, zero value otherwise.
 
 ### GetRunningSpacesOk
 
-`func (o *SecurityGroupRelationships) GetRunningSpacesOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest, bool)`
+`func (o *SecurityGroupRelationships) GetRunningSpacesOk() (*SecurityGroupRelationshipsRunningSpaces, bool)`
 
 GetRunningSpacesOk returns a tuple with the RunningSpaces field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRunningSpaces
 
-`func (o *SecurityGroupRelationships) SetRunningSpaces(v V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest)`
+`func (o *SecurityGroupRelationships) SetRunningSpaces(v SecurityGroupRelationshipsRunningSpaces)`
 
 SetRunningSpaces sets RunningSpaces field to given value.
 
@@ -53,20 +53,20 @@ HasRunningSpaces returns a boolean if a field has been set.
 
 ### GetStagingSpaces
 
-`func (o *SecurityGroupRelationships) GetStagingSpaces() V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest`
+`func (o *SecurityGroupRelationships) GetStagingSpaces() SecurityGroupRelationshipsStagingSpaces`
 
 GetStagingSpaces returns the StagingSpaces field if non-nil, zero value otherwise.
 
 ### GetStagingSpacesOk
 
-`func (o *SecurityGroupRelationships) GetStagingSpacesOk() (*V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest, bool)`
+`func (o *SecurityGroupRelationships) GetStagingSpacesOk() (*SecurityGroupRelationshipsStagingSpaces, bool)`
 
 GetStagingSpacesOk returns a tuple with the StagingSpaces field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStagingSpaces
 
-`func (o *SecurityGroupRelationships) SetStagingSpaces(v V3IsolationSegmentsGuidRelationshipsOrganizationsPostRequest)`
+`func (o *SecurityGroupRelationships) SetStagingSpaces(v SecurityGroupRelationshipsStagingSpaces)`
 
 SetStagingSpaces sets StagingSpaces field to given value.
 

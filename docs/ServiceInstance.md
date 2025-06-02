@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **LastOperation** | Pointer to [**LastOperation**](LastOperation.md) |  | [optional] 
 **Links** | Pointer to [**Links**](Links.md) |  | [optional] 
 **MaintenanceInfo** | Pointer to [**Get200ResponseLinksCloudControllerV2Meta**](Get200ResponseLinksCloudControllerV2Meta.md) |  | [optional] 
-**Metadata** | Pointer to [**V3AppsGuidDropletsCurrentGet200ResponseMetadata**](V3AppsGuidDropletsCurrentGet200ResponseMetadata.md) |  | [optional] 
+**Metadata** | Pointer to [**V3DropletsGuidPatchRequestMetadata**](V3DropletsGuidPatchRequestMetadata.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Relationships** | Pointer to [**ServiceInstanceRelationships**](ServiceInstanceRelationships.md) |  | [optional] 
 **Tags** | Pointer to **[]string** |  | [optional] 
@@ -189,20 +189,20 @@ HasMaintenanceInfo returns a boolean if a field has been set.
 
 ### GetMetadata
 
-`func (o *ServiceInstance) GetMetadata() V3AppsGuidDropletsCurrentGet200ResponseMetadata`
+`func (o *ServiceInstance) GetMetadata() V3DropletsGuidPatchRequestMetadata`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ServiceInstance) GetMetadataOk() (*V3AppsGuidDropletsCurrentGet200ResponseMetadata, bool)`
+`func (o *ServiceInstance) GetMetadataOk() (*V3DropletsGuidPatchRequestMetadata, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ServiceInstance) SetMetadata(v V3AppsGuidDropletsCurrentGet200ResponseMetadata)`
+`func (o *ServiceInstance) SetMetadata(v V3DropletsGuidPatchRequestMetadata)`
 
 SetMetadata sets Metadata field to given value.
 
