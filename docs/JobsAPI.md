@@ -26,7 +26,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
+	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
 )
 
 func main() {
@@ -106,7 +106,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/capiclient"
+	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
 )
 
 func main() {
