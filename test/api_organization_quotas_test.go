@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client/capiclient"
+	openapiclient "github.com/cloudfoundry-community/capi-openapi-go-client"
 )
 
 func Test_capiclient_OrganizationQuotasAPIService(t *testing.T) {
