@@ -1,4 +1,4 @@
-module github.com/GIT_USER_ID/GIT_REPO_ID/capiclient
+module github.com/cloudfoundry-community/capi-opanapi-go-client/capiclient
 
 go 1.18
 
