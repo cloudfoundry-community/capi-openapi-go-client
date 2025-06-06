@@ -1,4 +1,4 @@
-module github.com/cloudfoundry-community/capi-openapi-go-client/capiclient
+module github.com/cloudfoundry-community/capi-openapi-go-client/capiclient/v3
 
 go 1.18
 
