@@ -12,6 +12,12 @@ This client is generated from CAPI version **3.195.0**.
 go get github.com/cloudfoundry-community/capi-openapi-go-client/capiclient/v3@v3.195.0
 ```
 
+Or add this to your `go.mod` file:
+
+```go
+require github.com/cloudfoundry-community/capi-openapi-go-client/capiclient/v3 v3.195.0
+```
+
 ## Usage
 
 ```go
@@ -90,6 +96,7 @@ func (t *authTransport) RoundTrip(req *http.Request) (*http.Response, error) {
 
 - [CAPI Documentation](https://v3-apidocs.cloudfoundry.org/version/3.195.0/)
 - [OpenAPI Specification Source](https://github.com/cloudfoundry-community/capi-openapi-spec)
+- For detailed API documentation, see the [capiclient README](capiclient/README.md) and the [docs directory](capiclient/docs/)
 
 ## Generation
 
@@ -103,3 +110,15 @@ To regenerate this client:
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! This client is auto-generated from the Cloud Foundry OpenAPI specification. To update the client:
+
+1. Update the OpenAPI specification in `capiclient/api/openapi.yaml`
+2. Regenerate the client using OpenAPI Generator
+3. Submit a pull request with your changes
+
+## Support
+
+For issues and questions, please open an issue in the [GitHub repository](https://github.com/cloudfoundry-community/capi-openapi-go-client).
