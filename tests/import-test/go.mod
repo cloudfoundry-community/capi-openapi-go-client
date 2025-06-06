@@ -2,7 +2,7 @@ module import-test
 
 go 1.21
 
-require github.com/cloudfoundry-community/capi-openapi-go-client/v3 v3.195.0
+require github.com/cloudfoundry-community/capi-openapi-go-client/v3 v3.195.1
 
 require (
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
